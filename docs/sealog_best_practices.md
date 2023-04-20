@@ -22,10 +22,10 @@ description.
 ### Special Case: Samples
 For sample events the “Event Value” should ALWAYS be “SAMPLE”
 Sample templates MUST have the following event options:
- - Type: to specify the type of sample collected i.e. “biology, geology, eDNA, Niskin, etc”. This should be configured as a required option. If the desire is to have a dedicated button for a specific sample type then set this option as “static text” with the “value” set to the sample type i.e. “eDNA”.  If the event template is for multiple sample types then the “Type” option should have an option type of “dropdown” or “radio 
+ - **Type**: to specify the type of sample collected i.e. “biology, geology, eDNA, Niskin, etc”. This should be configured as a required option. If the desire is to have a dedicated button for a specific sample type then set this option as “static text” with the “value” set to the sample type i.e. “eDNA”.  If the event template is for multiple sample types then the “Type” option should have an option type of “dropdown” or “radio 
 buttons”.
-- Sample ID: to define the sample’s unique identification. This should be configured as a required option.
-- Storage Location: the unique location on the vehicle where the sample is stored. This should be configured as a required option. This option should have an option type of "dropdown" or "radio buttons". Refer to the list of standard vehicle locations for how to populated the event option values. If the sample is collected with a sceince-supplied sampling apparatus (gas tights) then the option value should be a list of unique identifications for the apparatus type.  Ensure that the naming convention used for any sceince-supplied sampling apparatus does not conflict with the standard location names.
+- **Sample ID**: to define the sample’s unique identification. This should be configured as a required option.
+- **Storage Location**: the unique location on the vehicle where the sample is stored. This should be configured as a required option. This option should have an option type of "dropdown" or "radio buttons". Refer to the list of standard vehicle locations for how to populated the event option values. If the sample is collected with a sceince-supplied sampling apparatus (gas tights) then the option value should be a list of unique identifications for the apparatus type.  Ensure that the naming convention used for any sceince-supplied sampling apparatus does not conflict with the standard location names.
 - Additional event options can be added to the sample event template so long as the option names do NOT include: “id”, “Type”, “Storage Location”, "Sample ID” or "comment"
 
 ### SOI Subastion’s standard naming convention for storage locations are:
