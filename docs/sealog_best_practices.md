@@ -9,12 +9,12 @@ in the exported data.
 Event option names can NOT be "id" or "comment". These are reserved keywords. 
 
 ## Event Option Types and their uses:
-- text: when the value possibilities for the option are unknown and must be manually filled out 
+- **text**: when the value possibilities for the option are unknown and must be manually filled out 
 when the event is submitted 
-- static text: when the value is known and should not be altered
-- dropdown: when the option is one of a long lists of possibilities
-- radio buttons when the option is one of a short list of possibilities
-- checkboxes: when the option is one OR more of a list of possibilities
+- **static text**: when the value is known and should not be altered
+- **dropdown**: when the option is one of a long lists of possibilities
+- **radio buttons**: when the option is one of a short list of possibilities
+- **checkboxes**: when the option is one OR more of a list of possibilities
 
 It is recommended to use the free_text input available to all event templates if an event should include a
 description.
