@@ -17,7 +17,10 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - datadirectory.qmd
+    - dashboards.qmd
     - sealog.qmd
+    - appendix.qmd
     - references.qmd
   
 

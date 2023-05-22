@@ -1,5 +1,3 @@
 # Introduction
 
-This is a book created from markdown and executable code.
-
-See @knuth84 for additional discussion of literate programming.
+This will be a book that contains chapters on accessing data systems while onboard R/V Falkor (too)

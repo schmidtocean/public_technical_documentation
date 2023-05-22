@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schmidt Ocean Institute Technical Documentation - 2&nbsp; Sealog-Subastian Configuration and Use</title>
+<title>Schmidt Ocean Institute Technical Documentation - 4&nbsp; Sealog-Subastian Configuration and Use</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./appendix.html" rel="next">
+<link href="./dashboards.html" rel="prev">
 <link href="./logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sealog-Subastian Configuration and Use</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealog-Subastian Configuration and Use</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -114,7 +114,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sealog.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sealog-Subastian Configuration and Use</span></a>
+  <a href="./datadirectory.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cruise Data Directory Structure</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dashboards.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dashboards</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sealog.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealog-Subastian Configuration and Use</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Appendix</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -131,35 +146,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="toc-section-number">2.1</span>  Overview</a></li>
-  <li><a href="#orientation" id="toc-orientation" class="nav-link" data-scroll-target="#orientation"><span class="toc-section-number">2.2</span>  Orientation</a></li>
-  <li><a href="#login" id="toc-login" class="nav-link" data-scroll-target="#login"><span class="toc-section-number">2.3</span>  Login</a></li>
-  <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates"><span class="toc-section-number">2.4</span>  Templates</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="toc-section-number">4.1</span>  Overview</a></li>
+  <li><a href="#orientation" id="toc-orientation" class="nav-link" data-scroll-target="#orientation"><span class="toc-section-number">4.2</span>  Orientation</a></li>
+  <li><a href="#login" id="toc-login" class="nav-link" data-scroll-target="#login"><span class="toc-section-number">4.3</span>  Login</a></li>
+  <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates"><span class="toc-section-number">4.4</span>  Templates</a>
   <ul class="collapse">
-  <li><a href="#event-template-configuration" id="toc-event-template-configuration" class="nav-link" data-scroll-target="#event-template-configuration"><span class="toc-section-number">2.4.1</span>  Event Template Configuration</a></li>
-  <li><a href="#saving-and-testing-events" id="toc-saving-and-testing-events" class="nav-link" data-scroll-target="#saving-and-testing-events"><span class="toc-section-number">2.4.2</span>  Saving and Testing Events</a></li>
+  <li><a href="#event-template-configuration" id="toc-event-template-configuration" class="nav-link" data-scroll-target="#event-template-configuration"><span class="toc-section-number">4.4.1</span>  Event Template Configuration</a></li>
+  <li><a href="#saving-and-testing-events" id="toc-saving-and-testing-events" class="nav-link" data-scroll-target="#saving-and-testing-events"><span class="toc-section-number">4.4.2</span>  Saving and Testing Events</a></li>
   </ul></li>
-  <li><a href="#samples" id="toc-samples" class="nav-link" data-scroll-target="#samples"><span class="toc-section-number">2.5</span>  Samples</a></li>
-  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata"><span class="toc-section-number">2.6</span>  Metadata</a>
+  <li><a href="#samples" id="toc-samples" class="nav-link" data-scroll-target="#samples"><span class="toc-section-number">4.5</span>  Samples</a></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata"><span class="toc-section-number">4.6</span>  Metadata</a>
   <ul class="collapse">
-  <li><a href="#vehicle-realtime-nav-data" id="toc-vehicle-realtime-nav-data" class="nav-link" data-scroll-target="#vehicle-realtime-nav-data"><span class="toc-section-number">2.6.1</span>  Vehicle Realtime Nav Data</a></li>
+  <li><a href="#vehicle-realtime-nav-data" id="toc-vehicle-realtime-nav-data" class="nav-link" data-scroll-target="#vehicle-realtime-nav-data"><span class="toc-section-number">4.6.1</span>  Vehicle Realtime Nav Data</a></li>
   </ul></li>
-  <li><a href="#sealog-in-use" id="toc-sealog-in-use" class="nav-link" data-scroll-target="#sealog-in-use"><span class="toc-section-number">2.7</span>  Sealog in Use</a>
+  <li><a href="#sealog-in-use" id="toc-sealog-in-use" class="nav-link" data-scroll-target="#sealog-in-use"><span class="toc-section-number">4.7</span>  Sealog in Use</a>
   <ul class="collapse">
-  <li><a href="#who-can-use-sealog" id="toc-who-can-use-sealog" class="nav-link" data-scroll-target="#who-can-use-sealog"><span class="toc-section-number">2.7.1</span>  Who Can Use Sealog?</a></li>
-  <li><a href="#what-do-we-log" id="toc-what-do-we-log" class="nav-link" data-scroll-target="#what-do-we-log"><span class="toc-section-number">2.7.2</span>  What Do We Log?</a></li>
-  <li><a href="#when-do-we-log-events" id="toc-when-do-we-log-events" class="nav-link" data-scroll-target="#when-do-we-log-events"><span class="toc-section-number">2.7.3</span>  When Do We Log Events?</a></li>
-  <li><a href="#where-can-we-use-sealog" id="toc-where-can-we-use-sealog" class="nav-link" data-scroll-target="#where-can-we-use-sealog"><span class="toc-section-number">2.7.4</span>  Where Can We Use Sealog?</a></li>
-  <li><a href="#how-should-we-use-sealog" id="toc-how-should-we-use-sealog" class="nav-link" data-scroll-target="#how-should-we-use-sealog"><span class="toc-section-number">2.7.5</span>  How Should We Use Sealog?</a></li>
+  <li><a href="#who-can-use-sealog" id="toc-who-can-use-sealog" class="nav-link" data-scroll-target="#who-can-use-sealog"><span class="toc-section-number">4.7.1</span>  Who Can Use Sealog?</a></li>
+  <li><a href="#what-do-we-log" id="toc-what-do-we-log" class="nav-link" data-scroll-target="#what-do-we-log"><span class="toc-section-number">4.7.2</span>  What Do We Log?</a></li>
+  <li><a href="#when-do-we-log-events" id="toc-when-do-we-log-events" class="nav-link" data-scroll-target="#when-do-we-log-events"><span class="toc-section-number">4.7.3</span>  When Do We Log Events?</a></li>
+  <li><a href="#where-can-we-use-sealog" id="toc-where-can-we-use-sealog" class="nav-link" data-scroll-target="#where-can-we-use-sealog"><span class="toc-section-number">4.7.4</span>  Where Can We Use Sealog?</a></li>
+  <li><a href="#how-should-we-use-sealog" id="toc-how-should-we-use-sealog" class="nav-link" data-scroll-target="#how-should-we-use-sealog"><span class="toc-section-number">4.7.5</span>  How Should We Use Sealog?</a></li>
   </ul></li>
-  <li><a href="#filtersearching-for-an-event" id="toc-filtersearching-for-an-event" class="nav-link" data-scroll-target="#filtersearching-for-an-event"><span class="toc-section-number">2.8</span>  Filter/Searching for An Event</a></li>
-  <li><a href="#data-exports" id="toc-data-exports" class="nav-link" data-scroll-target="#data-exports"><span class="toc-section-number">2.9</span>  Data Exports</a></li>
-  <li><a href="#dive-reports" id="toc-dive-reports" class="nav-link" data-scroll-target="#dive-reports"><span class="toc-section-number">2.10</span>  Dive Reports</a>
+  <li><a href="#filtersearching-for-an-event" id="toc-filtersearching-for-an-event" class="nav-link" data-scroll-target="#filtersearching-for-an-event"><span class="toc-section-number">4.8</span>  Filter/Searching for An Event</a></li>
+  <li><a href="#data-exports" id="toc-data-exports" class="nav-link" data-scroll-target="#data-exports"><span class="toc-section-number">4.9</span>  Data Exports</a></li>
+  <li><a href="#dive-reports" id="toc-dive-reports" class="nav-link" data-scroll-target="#dive-reports"><span class="toc-section-number">4.10</span>  Dive Reports</a>
   <ul class="collapse">
-  <li><a href="#dive-summary-report" id="toc-dive-summary-report" class="nav-link" data-scroll-target="#dive-summary-report"><span class="toc-section-number">2.10.1</span>  Dive Summary Report</a></li>
-  <li><a href="#vehicle-summary-report" id="toc-vehicle-summary-report" class="nav-link" data-scroll-target="#vehicle-summary-report"><span class="toc-section-number">2.10.2</span>  Vehicle Summary Report</a></li>
+  <li><a href="#dive-summary-report" id="toc-dive-summary-report" class="nav-link" data-scroll-target="#dive-summary-report"><span class="toc-section-number">4.10.1</span>  Dive Summary Report</a></li>
+  <li><a href="#vehicle-summary-report" id="toc-vehicle-summary-report" class="nav-link" data-scroll-target="#vehicle-summary-report"><span class="toc-section-number">4.10.2</span>  Vehicle Summary Report</a></li>
   </ul></li>
-  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions"><span class="toc-section-number">2.11</span>  Frequently Asked Questions</a></li>
+  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions"><span class="toc-section-number">4.11</span>  Frequently Asked Questions</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/schmidtocean/public-technical-documentation/edit/main/sealog.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/schmidtocean/public-technical-documentation/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/schmidtocean/public-technical-documentation/blob/main/sealog.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -168,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Sealog-Subastian Configuration and Use</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Sealog-Subastian Configuration and Use</span></h1>
 </div>
 
 
@@ -184,16 +199,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>R/V Falkor (too)</p>
-<section id="overview" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">2.1</span> Overview</h2>
+<section id="overview" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">4.1</span> Overview</h2>
 <p>Sealog SuBastian is a smart event logger for ROV SuBastian dives that couples key metadata (such as video framegrabs, vehicle position, vehicle depth, water temperature, etc.) with each event. Sealog can be configured for each cruise to better support a science party’s specific data logging needs. After each dive, Sealog creates an extensive “Dive Summary PDF” with all the events recorded during the dive, along with other useful graphics.</p>
 </section>
-<section id="orientation" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="orientation"><span class="header-section-number">2.2</span> Orientation</h2>
+<section id="orientation" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="orientation"><span class="header-section-number">4.2</span> Orientation</h2>
 <p>Sealog can be found either at 10.23.11.25/sealog-Sub/ in any web browser, or you can use the “Sealog-Subastian” link at 10.23.11.25. Currently, Sealog can only be reached while onboard the ship.</p>
 </section>
-<section id="login" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="login"><span class="header-section-number">2.3</span> Login</h2>
+<section id="login" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="login"><span class="header-section-number">4.3</span> Login</h2>
 <p>We recommend that each science party member create their own individual login for Sealog. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations.</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -206,14 +221,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="templates" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="templates"><span class="header-section-number">2.4</span> Templates</h2>
+<section id="templates" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="templates"><span class="header-section-number">4.4</span> Templates</h2>
 <p>System templates are event configurations that are logged and maintained by the ship’s crew to monitor key milestones during each dive (ex. in water/out of water times, on/off bottom times, video start/stop). These events are admin access only and cannot be edited by the science party. Event templates can be edited by the science party and are meant to be tailored to meet the science parties’ data logging needs.</p>
-<section id="event-template-configuration" class="level3" data-number="2.4.1">
-<h3 data-number="2.4.1" class="anchored" data-anchor-id="event-template-configuration"><span class="header-section-number">2.4.1</span> Event Template Configuration</h3>
+<section id="event-template-configuration" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="event-template-configuration"><span class="header-section-number">4.4.1</span> Event Template Configuration</h3>
 <p>This section will orient you on how to create Sealog “events.” It is important to note that the primary way of accessing exported data is via a spreadsheet. All “Event Values” and “Event Option” names should be concise.</p>
-<section id="adding-an-event-template" class="level4" data-number="2.4.1.1">
-<h4 data-number="2.4.1.1" class="anchored" data-anchor-id="adding-an-event-template"><span class="header-section-number">2.4.1.1</span> Adding an Event Template</h4>
+<section id="adding-an-event-template" class="level4" data-number="4.4.1.1">
+<h4 data-number="4.4.1.1" class="anchored" data-anchor-id="adding-an-event-template"><span class="header-section-number">4.4.1.1</span> Adding an Event Template</h4>
 <ul>
 <li>Once logged in, navigate to “System Management” then select “Event Management.”
 <ul>
@@ -222,36 +237,36 @@ ul.task-list li input[type="checkbox"] {
 <li>On the right hand side, the open for “Create Event Template” will allow you to create a new event. <img src="./images/image9.png" class="img-fluid"></li>
 </ul>
 </section>
-<section id="button-name" class="level4" data-number="2.4.1.2">
-<h4 data-number="2.4.1.2" class="anchored" data-anchor-id="button-name"><span class="header-section-number">2.4.1.2</span> Button Name</h4>
+<section id="button-name" class="level4" data-number="4.4.1.2">
+<h4 data-number="4.4.1.2" class="anchored" data-anchor-id="button-name"><span class="header-section-number">4.4.1.2</span> Button Name</h4>
 <p>Button name is the title of the event. In the example below, the button name is “Video Logging” and is used by the SuBastian team to log when the DVR’s begin recording.</p>
 </section>
-<section id="event-value" class="level4" data-number="2.4.1.3">
-<h4 data-number="2.4.1.3" class="anchored" data-anchor-id="event-value"><span class="header-section-number">2.4.1.3</span> Event Value</h4>
+<section id="event-value" class="level4" data-number="4.4.1.3">
+<h4 data-number="4.4.1.3" class="anchored" data-anchor-id="event-value"><span class="header-section-number">4.4.1.3</span> Event Value</h4>
 <p>Event values are a way of grouping events. For example, if you have several events that count as sampling (ex. coral collection, niskin sampling, biological sampling, etc.,) they can all be grouped as the event value “Sample.” In the dive summary pdf that gets created at the end of every dive, each Event Value will have its own section, summarizing all of the events under the particular Event Value for that dive.</p>
 <p>The screenshot below shows an example of events that were labeled with the Event Value “Sample” and the different types denote whether they are biological, niskins, or squeezer samples in this dive.</p>
 </section>
-<section id="template-categories" class="level4" data-number="2.4.1.4">
-<h4 data-number="2.4.1.4" class="anchored" data-anchor-id="template-categories"><span class="header-section-number">2.4.1.4</span> Template Categories</h4>
+<section id="template-categories" class="level4" data-number="4.4.1.4">
+<h4 data-number="4.4.1.4" class="anchored" data-anchor-id="template-categories"><span class="header-section-number">4.4.1.4</span> Template Categories</h4>
 <p>Template Categories create different tabs in the home screen to further organize event buttons. In the example below, there are three template categories configured: science, vehicle, video. By default, the “All” category will always show every event button configured. <img src="./images/temp.png" class="img-fluid"> Some science parties may want to broaden their own Template Categories beyond the single “Science” that is the default configuration, ex. “Observation, Sample, etc.” The “Vehicle” and “Video” template categories contain important vehicle milestones and should be left unchanged.</p>
 </section>
-<section id="free-text-event" class="level4" data-number="2.4.1.5">
-<h4 data-number="2.4.1.5" class="anchored" data-anchor-id="free-text-event"><span class="header-section-number">2.4.1.5</span> Free Text Event</h4>
+<section id="free-text-event" class="level4" data-number="4.4.1.5">
+<h4 data-number="4.4.1.5" class="anchored" data-anchor-id="free-text-event"><span class="header-section-number">4.4.1.5</span> Free Text Event</h4>
 <p>It is also possible to enter “free text events”. These are events that are logged without using event templates. This could be useful for quick notes, corrections, or if there is not a current event template configured for a certain situation during a dive. <img src="./images/freetext.png" class="img-fluid"></p>
 </section>
-<section id="configuring-event-options" class="level4" data-number="2.4.1.6">
-<h4 data-number="2.4.1.6" class="anchored" data-anchor-id="configuring-event-options"><span class="header-section-number">2.4.1.6</span> Configuring Event Options</h4>
+<section id="configuring-event-options" class="level4" data-number="4.4.1.6">
+<h4 data-number="4.4.1.6" class="anchored" data-anchor-id="configuring-event-options"><span class="header-section-number">4.4.1.6</span> Configuring Event Options</h4>
 <p>At the bottom of the “Create Event Template” the “+ Add Option” selection gives you further options to tailor each event.</p>
-<section id="name" class="level5" data-number="2.4.1.6.1">
-<h5 data-number="2.4.1.6.1" class="anchored" data-anchor-id="name"><span class="header-section-number">2.4.1.6.1</span> Name</h5>
+<section id="name" class="level5" data-number="4.4.1.6.1">
+<h5 data-number="4.4.1.6.1" class="anchored" data-anchor-id="name"><span class="header-section-number">4.4.1.6.1</span> Name</h5>
 <p>The name of the event option describes the specific option you are creating. For example, in the screenshot below, there are two options configured. The first option, named “Action” allows you to choose to either start or stop the dive stream radio buttons. The second option, named “Platform” allows you to choose checkboxes for the platforms that are being started.</p>
 <ul>
 <li>Event options cannot be named “id” or “comment”- these are reserved keywords.</li>
 </ul>
 <p><img src="./images/image8.png" class="img-fluid"></p>
 </section>
-<section id="type" class="level5" data-number="2.4.1.6.2">
-<h5 data-number="2.4.1.6.2" class="anchored" data-anchor-id="type"><span class="header-section-number">2.4.1.6.2</span> Type</h5>
+<section id="type" class="level5" data-number="4.4.1.6.2">
+<h5 data-number="4.4.1.6.2" class="anchored" data-anchor-id="type"><span class="header-section-number">4.4.1.6.2</span> Type</h5>
 <p>The type describes the choice of action you have for this option. The options are described in more detail below.</p>
 <ul>
 <li><p>Static Text</p>
@@ -278,8 +293,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
-<section id="saving-and-testing-events" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2" class="anchored" data-anchor-id="saving-and-testing-events"><span class="header-section-number">2.4.2</span> Saving and Testing Events</h3>
+<section id="saving-and-testing-events" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="saving-and-testing-events"><span class="header-section-number">4.4.2</span> Saving and Testing Events</h3>
 <ul>
 <li>Click “Create” to save your event to the “Event Templates.”</li>
 <li><img src="./images/image4.png" class="img-fluid"> Click to edit an Event Template.</li>
@@ -288,8 +303,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="samples" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="samples"><span class="header-section-number">2.5</span> Samples</h2>
+<section id="samples" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="samples"><span class="header-section-number">4.5</span> Samples</h2>
 <p>Please follow the following requirements for logging your sample’s on Sealog to ensure they will be properly calculated in Sealog’s post-dive metrics. Please note that in all events that have the word “sample” in the “Event Value” will be used towards the total number of samples. For sample events, the “Event Value” should ALWAYS be “SAMPLE” and should be configured with the following options:</p>
 <ul>
 <li><p>Type</p>
@@ -455,33 +470,33 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="metadata" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="metadata"><span class="header-section-number">2.6</span> Metadata</h2>
+<section id="metadata" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="metadata"><span class="header-section-number">4.6</span> Metadata</h2>
 <p>With each event logged, the following metadata gets grabbed with it: #### ROV Video Frame Grabs High resolution screen capture on all cameras. - Science Camera (4K camera) - Situation Camera (4K camera) - HD Quad - Forward HD Cam, looking to Port. - Aft HD Cam, looking Aft. - Forward HD Cam, looking down onto the Porch. - Forward HD Cam, looking to Stbd. - SD Quad - SD Teather Cam, looking aft - SD Manifold Cam - Suction Sampler Cam - Port Manipulator Cam</p>
 <p><img src="./images/eventdetails.png" class="img-fluid"></p>
-<section id="vessel-realtime-nav-data" class="level4" data-number="2.6.0.1">
-<h4 data-number="2.6.0.1" class="anchored" data-anchor-id="vessel-realtime-nav-data"><span class="header-section-number">2.6.0.1</span> Vessel Realtime Nav Data</h4>
+<section id="vessel-realtime-nav-data" class="level4" data-number="4.6.0.1">
+<h4 data-number="4.6.0.1" class="anchored" data-anchor-id="vessel-realtime-nav-data"><span class="header-section-number">4.6.0.1</span> Vessel Realtime Nav Data</h4>
 <ul>
 <li>Falkor (too) position and true heading.</li>
 </ul>
 <p><img src="./images/image2.png" class="img-fluid"></p>
 </section>
-<section id="vehicle-realtime-nav-data" class="level3" data-number="2.6.1">
-<h3 data-number="2.6.1" class="anchored" data-anchor-id="vehicle-realtime-nav-data"><span class="header-section-number">2.6.1</span> Vehicle Realtime Nav Data</h3>
+<section id="vehicle-realtime-nav-data" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="vehicle-realtime-nav-data"><span class="header-section-number">4.6.1</span> Vehicle Realtime Nav Data</h3>
 <ul>
 <li>SuBastian position as calculated by its Sprint Inertial Navigation System, which takes several aiding sensors (Ultra Short BaseLine underwater positioning system, Doppler Velocity Log sensors, depth sensors) along with its own internal inertial sensors and accelerometers and uses an algorithm to output the most accurate position based on weighted sensor inputs.</li>
 <li>This is generally the most accurate position for the ROV, but it’s important to confirm this with the Marine Technicians during the cruise. <img src="./images/image17.png" class="img-fluid"></li>
 </ul>
-<section id="vehicle-realtime-usbl-data" class="level4" data-number="2.6.1.1">
-<h4 data-number="2.6.1.1" class="anchored" data-anchor-id="vehicle-realtime-usbl-data"><span class="header-section-number">2.6.1.1</span> Vehicle Realtime USBL Data</h4>
+<section id="vehicle-realtime-usbl-data" class="level4" data-number="4.6.1.1">
+<h4 data-number="4.6.1.1" class="anchored" data-anchor-id="vehicle-realtime-usbl-data"><span class="header-section-number">4.6.1.1</span> Vehicle Realtime USBL Data</h4>
 <ul>
 <li>USBL is a method of underwater navigation that uses a transceiver head lowered under the ship that communicates with a beacon on the ROV, computing the range and angle from the transceiver head to the beacon. The software then can determine the position of the beacon on the ROV.</li>
 <li>This is a very accurate form of underwater navigation, but is generally not as accurate as the Sprint INS solution.</li>
 </ul>
 <p><img src="./images/image1.png" class="img-fluid"></p>
 </section>
-<section id="vehicle-realtime-ctd-data" class="level4" data-number="2.6.1.2">
-<h4 data-number="2.6.1.2" class="anchored" data-anchor-id="vehicle-realtime-ctd-data"><span class="header-section-number">2.6.1.2</span> Vehicle Realtime CTD Data</h4>
+<section id="vehicle-realtime-ctd-data" class="level4" data-number="4.6.1.2">
+<h4 data-number="4.6.1.2" class="anchored" data-anchor-id="vehicle-realtime-ctd-data"><span class="header-section-number">4.6.1.2</span> Vehicle Realtime CTD Data</h4>
 <ul>
 <li>Data from a SBE49 FastCAT CTD</li>
 <li>Realtime measured data:
@@ -499,31 +514,31 @@ ul.task-list li input[type="checkbox"] {
 <img src="./images/image33.png" class="img-fluid"></li>
 </ul>
 </section>
-<section id="vehicle-realtime-o2-data" class="level4" data-number="2.6.1.3">
-<h4 data-number="2.6.1.3" class="anchored" data-anchor-id="vehicle-realtime-o2-data"><span class="header-section-number">2.6.1.3</span> Vehicle Realtime O2 Data</h4>
+<section id="vehicle-realtime-o2-data" class="level4" data-number="4.6.1.3">
+<h4 data-number="4.6.1.3" class="anchored" data-anchor-id="vehicle-realtime-o2-data"><span class="header-section-number">4.6.1.3</span> Vehicle Realtime O2 Data</h4>
 <p>Values shown are corrected to account for the effects of salinity and pressure . Raw values are available in separate data files if needed. - Aanderaa Oxygen Optode - Concentration: 196.9 umol - Saturation: % <img src="./images/image30.png" class="img-fluid"></p>
 </section>
-<section id="vehicle-realtime-paro-data" class="level4" data-number="2.6.1.4">
-<h4 data-number="2.6.1.4" class="anchored" data-anchor-id="vehicle-realtime-paro-data"><span class="header-section-number">2.6.1.4</span> Vehicle Realtime Paro Data</h4>
+<section id="vehicle-realtime-paro-data" class="level4" data-number="4.6.1.4">
+<h4 data-number="4.6.1.4" class="anchored" data-anchor-id="vehicle-realtime-paro-data"><span class="header-section-number">4.6.1.4</span> Vehicle Realtime Paro Data</h4>
 <ul>
 <li>Paroscientific Digiquartz Depth Sensor (m) <img src="./images/image32.png" class="img-fluid"></li>
 </ul>
 </section>
 </section>
 </section>
-<section id="sealog-in-use" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="sealog-in-use"><span class="header-section-number">2.7</span> Sealog in Use</h2>
+<section id="sealog-in-use" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="sealog-in-use"><span class="header-section-number">4.7</span> Sealog in Use</h2>
 <p>Once event templates are set up for your dive…now it’s time to put the templates in action.</p>
-<section id="who-can-use-sealog" class="level3" data-number="2.7.1">
-<h3 data-number="2.7.1" class="anchored" data-anchor-id="who-can-use-sealog"><span class="header-section-number">2.7.1</span> Who Can Use Sealog?</h3>
+<section id="who-can-use-sealog" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="who-can-use-sealog"><span class="header-section-number">4.7.1</span> Who Can Use Sealog?</h3>
 <ul>
 <li>Every dive, SOI has a datalogger on watch, who works to track information specific to the vessel’s need for operation and outreach and to ensure specific vehicle milestones are set up for Sealog’s reporting mechanisms.</li>
 <li>It’s up to the science party to provide watchstanders who will log and keep track of scientific data logging needs. Generally at least one (if not all) watchstanders are in charge of adding events as needed during a dive.</li>
 <li>Any scientist onboard the ship who wants to contribute to event logging is able to do so.</li>
 </ul>
 </section>
-<section id="what-do-we-log" class="level3" data-number="2.7.2">
-<h3 data-number="2.7.2" class="anchored" data-anchor-id="what-do-we-log"><span class="header-section-number">2.7.2</span> What Do We Log?</h3>
+<section id="what-do-we-log" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="what-do-we-log"><span class="header-section-number">4.7.2</span> What Do We Log?</h3>
 <ul>
 <li>Crewmembers will log Vehicle Events that are critical to Sealog operation and reporting mechanisms. We also will log certain highlights for our Outreach team. All of our events will be available to scientists in the data exports and reports.</li>
 <li>We recommend that Scientists communicate internally about what kinds of events should be logged to best serve your needs. Some examples may be:
@@ -535,8 +550,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="when-do-we-log-events" class="level3" data-number="2.7.3">
-<h3 data-number="2.7.3" class="anchored" data-anchor-id="when-do-we-log-events"><span class="header-section-number">2.7.3</span> When Do We Log Events?</h3>
+<section id="when-do-we-log-events" class="level3" data-number="4.7.3">
+<h3 data-number="4.7.3" class="anchored" data-anchor-id="when-do-we-log-events"><span class="header-section-number">4.7.3</span> When Do We Log Events?</h3>
 <ul>
 <li>Sealog works best when events are logged during an active dive.</li>
 <li>Often scientists will assign certain individuals to be incharge of logging in Sealog per watch.</li>
@@ -544,16 +559,16 @@ ul.task-list li input[type="checkbox"] {
 <li>ASNAP is an automatic screengrab that is run at a designated timed interval during the dive. The default settings have ASNAP running once every 60 seconds, that will take a screengrab of video and metadata, so a reasonable log of the dive will exist with minimal science events logged.</li>
 </ul>
 </section>
-<section id="where-can-we-use-sealog" class="level3" data-number="2.7.4">
-<h3 data-number="2.7.4" class="anchored" data-anchor-id="where-can-we-use-sealog"><span class="header-section-number">2.7.4</span> Where Can We Use Sealog?</h3>
+<section id="where-can-we-use-sealog" class="level3" data-number="4.7.4">
+<h3 data-number="4.7.4" class="anchored" data-anchor-id="where-can-we-use-sealog"><span class="header-section-number">4.7.4</span> Where Can We Use Sealog?</h3>
 <ul>
 <li>Currently, Sealog is only available onboard Falkor (too)’s intranet.</li>
 <li>You can log events anywhere on the ship that has internet connectivity.</li>
 <li>In the future we hope to provide access to Sealog for scientists ashore.</li>
 </ul>
 </section>
-<section id="how-should-we-use-sealog" class="level3" data-number="2.7.5">
-<h3 data-number="2.7.5" class="anchored" data-anchor-id="how-should-we-use-sealog"><span class="header-section-number">2.7.5</span> How Should We Use Sealog?</h3>
+<section id="how-should-we-use-sealog" class="level3" data-number="4.7.5">
+<h3 data-number="4.7.5" class="anchored" data-anchor-id="how-should-we-use-sealog"><span class="header-section-number">4.7.5</span> How Should We Use Sealog?</h3>
 <ul>
 <li>We provide the resource and it’s up to you as the science party to decide your cruise best practices.
 <ul>
@@ -568,8 +583,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="filtersearching-for-an-event" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="filtersearching-for-an-event"><span class="header-section-number">2.8</span> Filter/Searching for An Event</h2>
+<section id="filtersearching-for-an-event" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="filtersearching-for-an-event"><span class="header-section-number">4.8</span> Filter/Searching for An Event</h2>
 <ul>
 <li>On the main screen, the “Event History” box has a filter box. It’s important to note that this will only filter button names and wont “search” for a keyword in the text or options.</li>
 <li>The example below shows how you can filter your events to show only the events that are associated with “VIDEO LOGGING.”</li>
@@ -592,8 +607,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="data-exports" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="data-exports"><span class="header-section-number">2.9</span> Data Exports</h2>
+<section id="data-exports" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="data-exports"><span class="header-section-number">4.9</span> Data Exports</h2>
 <p>After every dive, a script is run that will summarize the dive, compile all of the metadata and send it to the PI-NAS. The following exports are available after every dive.</p>
 <ul>
 <li><p>Dive Video</p>
@@ -619,10 +634,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Dive number, location, and summary.</p></li>
 </ul>
 </section>
-<section id="dive-reports" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="dive-reports"><span class="header-section-number">2.10</span> Dive Reports</h2>
-<section id="dive-summary-report" class="level3" data-number="2.10.1">
-<h3 data-number="2.10.1" class="anchored" data-anchor-id="dive-summary-report"><span class="header-section-number">2.10.1</span> Dive Summary Report</h3>
+<section id="dive-reports" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="dive-reports"><span class="header-section-number">4.10</span> Dive Reports</h2>
+<section id="dive-summary-report" class="level3" data-number="4.10.1">
+<h3 data-number="4.10.1" class="anchored" data-anchor-id="dive-summary-report"><span class="header-section-number">4.10.1</span> Dive Summary Report</h3>
 <p>Each dive, a summary report gets produced which includes the following information and graphics:</p>
 <ul>
 <li><p>Dive Overview</p>
@@ -665,8 +680,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><img src="./images/image27.png" class="img-fluid"></p>
 </section>
-<section id="vehicle-summary-report" class="level3" data-number="2.10.2">
-<h3 data-number="2.10.2" class="anchored" data-anchor-id="vehicle-summary-report"><span class="header-section-number">2.10.2</span> Vehicle Summary Report</h3>
+<section id="vehicle-summary-report" class="level3" data-number="4.10.2">
+<h3 data-number="4.10.2" class="anchored" data-anchor-id="vehicle-summary-report"><span class="header-section-number">4.10.2</span> Vehicle Summary Report</h3>
 <p>This report is meant to be a summary of events that the ROV pilots can use to keep track of vehicle information. Most of the data here is more extensively covered in the Dive Summary Report. Vehicle Summary Report includes:</p>
 <ul>
 <li>Dive Timeline</li>
@@ -680,8 +695,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="frequently-asked-questions" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="frequently-asked-questions"><span class="header-section-number">2.11</span> Frequently Asked Questions</h2>
+<section id="frequently-asked-questions" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="frequently-asked-questions"><span class="header-section-number">4.11</span> Frequently Asked Questions</h2>
 <ul>
 <li><p>Is it possible to log an event in the past?</p>
 <p>Yes, at the bottom of each event template entry, there is an option for “Custom Time (UTC).” This can be used to adjust the time of the event, however Sealog will not grab past metadata for this entry.</p></li>
@@ -961,13 +976,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./dashboards.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dashboards</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./appendix.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Appendix</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
