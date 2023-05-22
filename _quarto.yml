@@ -1,0 +1,39 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Schmidt Ocean Institute Technical Documentation"
+  author: "Schmidt Ocean Institute"
+  favicon: logo.png
+  date: "5/22/2023"
+  search: true
+  repo-url: https://github.com/schmidtocean/public-technical-documentation/
+  repo-actions: [edit, issue, source]
+  downloads: [pdf]
+  sidebar:
+    style: docked
+    background: light
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - sealog.qmd
+    - references.qmd
+  
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: spacelab
+      dark: darkly
+    css: custom.css
+    
+
+
+  pdf:
+    documentclass: scrreprt
+
+
+
