@@ -234,7 +234,7 @@ With each event logged, the following metadata gets grabbed with it:
   - Sound Velocity (m/s)
   - Depth (m)
 
-  ![](/images/image33.png)
+![](/images/image33.png)
 
 #### Vehicle Realtime O2 Data
 Values shown are corrected to account for the effects of salinity and pressure . Raw values are available in separate data files if needed. 
@@ -243,12 +243,13 @@ Values shown are corrected to account for the effects of salinity and pressure .
   - Concentration: 196.9 umol
   - Saturation: %
 
-	![](/images/image30.png)	
+![](/images/image30.png)	
 
 #### Vehicle Realtime Paro Data
+
 - Paroscientific Digiquartz Depth Sensor (m)
 
-  ![](/images/image32.png)
+![](/images/image32.png)
 
 
 
