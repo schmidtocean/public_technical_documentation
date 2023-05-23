@@ -28,10 +28,12 @@ This section will orient you on how to create Sealog “events.” It is importa
 #### Adding an Event Template
 - Once logged in, navigate to “System Management” then select “Event Management.”
     - Please note you need to be logged in as a user, “Guest” does not have event management access. 
-    ![](/images/image21.png)
+
+![](/images/image21.png)
 		
 - On the right hand side, the open for “Create Event Template” will allow you to create a new event. 
-![](/images/image9.png)
+
+![](/images/image9.png){width=40%}
 		
 
 #### Button Name
@@ -49,6 +51,7 @@ Some science parties may want to broaden their own Template Categories beyond th
 
 #### Free Text Event
 It is also possible to enter “free text events”. These are events that are logged without using  event templates. This could be useful for quick notes, corrections, or if there is not a current event template configured for a certain situation during a dive. 
+
 ![](/images/freetext.png)
 	
 
@@ -60,7 +63,7 @@ The name of the event option describes the specific option you are creating. For
 
 - Event options cannot be named “id” or “comment”- these are reserved keywords. 
 
-![](/images/image8.png)
+![](/images/image8.png){width=40%}
 
 
 ##### Type
@@ -70,41 +73,41 @@ The type describes the choice of action you have for this option. The options ar
 
   Static text options are for when the value is known and should not be altered. This can be used when the act of clicking the event button is all that is needed to log the event. In the example below, the event “Vehicle on Deck” will always have a value of  “On Deck.”
 
-  ![](/images/image15.png)
+  ![](/images/image15.png){width=40%}
 
 
 - Text
 
   The text option is for when the value possibilities for the option are unknown and must be manually filled out when the event is submitted. This could be used when describing file names, writing the species name of an animal observed during a dive, describing a frame grab, and more. 
 
-  ![](/images/image10.png)
+  ![](/images/image10.png){width=40%}
 
 - Dropdown
 
   The dropdown option is for when the option is one out of a long list of possibilities. In the example below, a dropdown is used to describe all of the octocoral species to aid in a biological observation event. 
 
-  ![](/images/dropdown.png)
+  ![](/images/dropdown.png){width=40%}
 
 
 - Checkboxes
 
   Checkboxes are for when the option is one or more of a list of possibilities. In the example below, this event allows the user to say they’re starting both Facebook and YouTube streams, or just one. 
 
-  ![](/images/image23.png)
+  ![](/images/image23.png){width=40%}
 
 
 - Radio Buttons
 
   Radio buttons are for when the option is one of a short list of possibilities. In the option below, the radio buttons are used to describe an action of starting or stopping the divestream, while checkboxes are used to choose one or all of the listed platforms.
 
-  ![](/images/radio.png)
+  ![](/images/radio.png){width=40%}
 
 
 - Required Button
 
   The required button allows you to choose if an entry is necessary before the event can be created. For example, you may want to have any entry that requires a Sample ID or file name as “required” so this can’t accidentally be reported without key information. 
 
-  ![](/images/image7.png)
+  ![](/images/image7.png){width=40%}
 
 
 - Additional Text
@@ -179,8 +182,11 @@ For sample events, the “Event Value” should ALWAYS be “SAMPLE” and shoul
 
 ## Metadata 
 With each event logged, the following metadata gets grabbed with it:
+
 #### ROV Video Frame Grabs
+
 	High resolution screen capture on all cameras.
+
 - Science Camera (4K camera)
 - Situation Camera (4K camera)
 - HD Quad
@@ -204,6 +210,7 @@ With each event logged, the following metadata gets grabbed with it:
 ### Vehicle Realtime Nav Data
 - SuBastian position as calculated by its Sprint Inertial Navigation System, which takes several aiding sensors (Ultra Short BaseLine underwater positioning system, Doppler Velocity Log sensors, depth sensors) along with its own internal inertial sensors and accelerometers and uses an algorithm to output the most accurate position based on weighted sensor inputs. 
 - This is generally the most accurate position for the ROV, but it's important to confirm this with the Marine Technicians during the cruise. 
+
 ![](/images/image17.png)
 
 
@@ -216,6 +223,7 @@ With each event logged, the following metadata gets grabbed with it:
 
 
 #### Vehicle Realtime CTD Data
+
 - Data from a SBE49 FastCAT CTD
 - Realtime measured data: 
   - Conductivity (uS/cm)
@@ -230,13 +238,16 @@ With each event logged, the following metadata gets grabbed with it:
 
 #### Vehicle Realtime O2 Data
 Values shown are corrected to account for the effects of salinity and pressure . Raw values are available in separate data files if needed. 
+
 - Aanderaa Oxygen Optode
   - Concentration: 196.9 umol
   - Saturation: %
+
 	![](/images/image30.png)	
 
 #### Vehicle Realtime Paro Data
 - Paroscientific Digiquartz Depth Sensor (m)
+
   ![](/images/image32.png)
 
 
@@ -245,11 +256,13 @@ Values shown are corrected to account for the effects of salinity and pressure .
 Once event templates are set up for your dive…now it's time to put the templates in action. 
 
 ### Who Can Use Sealog?
+
 - Every dive, SOI has a datalogger on watch, who works to track information specific to the vessel’s need for operation and outreach and to ensure specific vehicle milestones are set up for Sealog’s reporting mechanisms. 
 - It’s up to the science party to provide watchstanders who will log and keep track of scientific data logging needs. Generally at least one (if not all) watchstanders are in charge of adding events as needed during a dive. 
 - Any scientist onboard the ship who wants to contribute to event logging is able to do so. 
 
 ### What Do We Log?
+
 - Crewmembers will log Vehicle Events that are critical to Sealog operation and reporting mechanisms. We also will log certain highlights for our Outreach team. All of our events will be available to scientists in the data exports and reports. 
 - We recommend that Scientists communicate internally about what kinds of events should be logged to best serve your needs. Some examples may be:
   - Wide angle and/or zoom screengrabs of samples prior to sampling.
@@ -258,17 +271,20 @@ Once event templates are set up for your dive…now it's time to put the templat
   - Screengrabs of anthropological observations.
 
 ### When Do We Log Events?
+
 - Sealog works best when events are logged during an active dive. 
 - Often scientists will assign certain individuals to be incharge of logging in Sealog per watch. 
 - We can also log Sealog after the fact, but the screen grabs and metadata are NOT captured.
 - ASNAP is an automatic screengrab that is run at a designated timed interval during the dive. The default settings have ASNAP running once every 60 seconds, that will take a screengrab of video and metadata, so a reasonable log of the dive will exist with minimal science events logged. 
 
 ### Where Can We Use Sealog?
+
 - Currently, Sealog is only available onboard Falkor (too)’s intranet. 
 - You can log events anywhere on the ship that has internet connectivity. 
 - In the future we hope to provide access to Sealog for scientists ashore. 
 
 ### How Should We Use Sealog?
+
 - We provide the resource and it's up to you as the science party to decide your cruise best practices. 
   - Some examples may include:
     - Taking a screengrab prior to any sample. 
@@ -277,10 +293,11 @@ Once event templates are set up for your dive…now it's time to put the templat
     - Duplicating key notes into a spreadsheet or logbook.
 
 ## Filter/Searching for An Event
+
 - On the main screen, the “Event History” box has a filter box. It’s important to note that this will only filter button names and wont “search” for a keyword in the text or options. 
 - The example below shows how you can filter your events to show only the events that are associated with “VIDEO LOGGING.”
 
-![](/images/image3.png)
+  ![](/images/image3.png){width=70%}
 
 - To search keywords, navigate to the following location: 
   - Review Cruises/Dives 
@@ -322,6 +339,7 @@ After every dive, a script is run that will summarize the dive, compile all of t
 
 ## Dive Reports
 ### Dive Summary Report
+
 Each dive, a summary report gets produced which includes the following information and graphics:
 
 - Dive Overview
