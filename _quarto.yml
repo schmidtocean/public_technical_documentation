@@ -8,7 +8,7 @@ book:
   favicon: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
   date: "5/22/2023"
   search: true
-  repo-url: https://github.com/schmidtocean/public-technical-documentation/
+  repo-url: https://github.com/schmidtocean/public_technical_documentation/
   repo-actions: [edit, issue, source]
   downloads: [pdf]
   pdf-url: index.pdf
