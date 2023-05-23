@@ -46,7 +46,9 @@ The screenshot below shows an example of events that were labeled with the Event
 
 #### Template Categories
 Template Categories create different tabs in the home screen to further organize event buttons. In the example below, there are three template categories configured: science, vehicle, video. By default, the “All” category will always show every event button configured. 
+
 ![](/images/temp.png)
+
 Some science parties may want to broaden their own Template Categories beyond the single “Science” that is the default configuration, ex. “Observation, Sample, etc.” The “Vehicle” and “Video” template categories contain important vehicle milestones and should be left unchanged. 
 
 #### Free Text Event

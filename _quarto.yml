@@ -5,21 +5,25 @@ project:
 book:
   title: "Schmidt Ocean Institute Technical Documentation"
   author: "Schmidt Ocean Institute"
-  favicon: logo.png
+  favicon: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
   date: "5/22/2023"
   search: true
   repo-url: https://github.com/schmidtocean/public-technical-documentation/
   repo-actions: [edit, issue, source]
   downloads: [pdf]
+  pdf-url: index.pdf
+  cover-image: /images/FKt230115-Falkortoo_Aerial-20230117-Ingle-0824.jpg
   sidebar:
     style: docked
     background: light
+    logo: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
   chapters:
     - index.qmd
     - intro.qmd
     - datadirectory.qmd
     - dashboards.qmd
     - sealog.qmd
+  appendices:
     - appendix.qmd
     - references.qmd
   
@@ -30,7 +34,7 @@ format:
   html:
     theme:
       light: spacelab
-      dark: darkly
+      dark: [darkly, dark.scss]
     css: custom.css
     
 

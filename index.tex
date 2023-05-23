@@ -173,7 +173,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable, sharp corners, interior hidden, frame hidden, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, sharp corners, boxrule=0pt, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -312,12 +312,20 @@ Template}\label{adding-an-event-template}}
   \tightlist
   \item
     Please note you need to be logged in as a user, ``Guest'' does not
-    have event management access. \includegraphics{images/image21.png}
+    have event management access.
   \end{itemize}
+\end{itemize}
+
+\includegraphics{images/image21.png}
+
+\begin{itemize}
+\tightlist
 \item
   On the right hand side, the open for ``Create Event Template'' will
-  allow you to create a new event. \includegraphics{images/image9.png}
+  allow you to create a new event.
 \end{itemize}
+
+\includegraphics[width=0.4\textwidth,height=\textheight]{images/image9.png}
 
 \hypertarget{button-name}{%
 \subsubsection{Button Name}\label{button-name}}
@@ -348,11 +356,14 @@ Template Categories create different tabs in the home screen to further
 organize event buttons. In the example below, there are three template
 categories configured: science, vehicle, video. By default, the ``All''
 category will always show every event button configured.
-\includegraphics{images/temp.png} Some science parties may want to
-broaden their own Template Categories beyond the single ``Science'' that
-is the default configuration, ex. ``Observation, Sample, etc.'' The
-``Vehicle'' and ``Video'' template categories contain important vehicle
-milestones and should be left unchanged.
+
+\includegraphics{images/temp.png}
+
+Some science parties may want to broaden their own Template Categories
+beyond the single ``Science'' that is the default configuration, ex.
+``Observation, Sample, etc.'' The ``Vehicle'' and ``Video'' template
+categories contain important vehicle milestones and should be left
+unchanged.
 
 \hypertarget{free-text-event}{%
 \subsubsection{Free Text Event}\label{free-text-event}}
@@ -361,6 +372,7 @@ It is also possible to enter ``free text events''. These are events that
 are logged without using event templates. This could be useful for quick
 notes, corrections, or if there is not a current event template
 configured for a certain situation during a dive.
+
 \includegraphics{images/freetext.png}
 
 \hypertarget{configuring-event-options}{%
@@ -387,7 +399,7 @@ that are being started.
   reserved keywords.
 \end{itemize}
 
-\includegraphics{images/image8.png}
+\includegraphics[width=0.4\textwidth,height=\textheight]{images/image8.png}
 
 \hypertarget{type}{%
 \paragraph{Type}\label{type}}
@@ -404,7 +416,7 @@ options are described in more detail below.
   all that is needed to log the event. In the example below, the event
   ``Vehicle on Deck'' will always have a value of ``On Deck.''
 
-  \includegraphics{images/image15.png}
+  \includegraphics[width=0.4\textwidth,height=\textheight]{images/image15.png}
 \item
   Text
 
@@ -414,7 +426,7 @@ options are described in more detail below.
   name of an animal observed during a dive, describing a frame grab, and
   more.
 
-  \includegraphics{images/image10.png}
+  \includegraphics[width=0.4\textwidth,height=\textheight]{images/image10.png}
 \item
   Dropdown
 
@@ -422,7 +434,7 @@ options are described in more detail below.
   of possibilities. In the example below, a dropdown is used to describe
   all of the octocoral species to aid in a biological observation event.
 
-  \includegraphics{images/dropdown.png}
+  \includegraphics[width=0.4\textwidth,height=\textheight]{images/dropdown.png}
 \item
   Checkboxes
 
@@ -430,7 +442,7 @@ options are described in more detail below.
   possibilities. In the example below, this event allows the user to say
   they're starting both Facebook and YouTube streams, or just one.
 
-  \includegraphics{images/image23.png}
+  \includegraphics[width=0.4\textwidth,height=\textheight]{images/image23.png}
 \item
   Radio Buttons
 
@@ -439,7 +451,7 @@ options are described in more detail below.
   describe an action of starting or stopping the divestream, while
   checkboxes are used to choose one or all of the listed platforms.
 
-  \includegraphics{images/radio.png}
+  \includegraphics[width=0.4\textwidth,height=\textheight]{images/radio.png}
 \item
   Required Button
 
@@ -448,7 +460,7 @@ options are described in more detail below.
   entry that requires a Sample ID or file name as ``required'' so this
   can't accidentally be reported without key information.
 
-  \includegraphics{images/image7.png}
+  \includegraphics[width=0.4\textwidth,height=\textheight]{images/image7.png}
 \item
   Additional Text
 
@@ -568,12 +580,49 @@ Suction 08 & S-8 \\
 \section{Metadata}\label{metadata}}
 
 With each event logged, the following metadata gets grabbed with it:
-\#\#\#\# ROV Video Frame Grabs High resolution screen capture on all
-cameras. - Science Camera (4K camera) - Situation Camera (4K camera) -
-HD Quad - Forward HD Cam, looking to Port. - Aft HD Cam, looking Aft. -
-Forward HD Cam, looking down onto the Porch. - Forward HD Cam, looking
-to Stbd. - SD Quad - SD Teather Cam, looking aft - SD Manifold Cam -
-Suction Sampler Cam - Port Manipulator Cam
+
+\hypertarget{rov-video-frame-grabs}{%
+\subsubsection{ROV Video Frame Grabs}\label{rov-video-frame-grabs}}
+
+\begin{verbatim}
+High resolution screen capture on all cameras.
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Science Camera (4K camera)
+\item
+  Situation Camera (4K camera)
+\item
+  HD Quad
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Forward HD Cam, looking to Port.
+  \item
+    Aft HD Cam, looking Aft.
+  \item
+    Forward HD Cam, looking down onto the Porch.
+  \item
+    Forward HD Cam, looking to Stbd.
+  \end{itemize}
+\item
+  SD Quad
+
+  \begin{itemize}
+  \tightlist
+  \item
+    SD Teather Cam, looking aft
+  \item
+    SD Manifold Cam
+  \item
+    Suction Sampler Cam
+  \item
+    Port Manipulator Cam
+  \end{itemize}
+\end{itemize}
 
 \includegraphics{images/eventdetails.png}
 
@@ -604,8 +653,10 @@ Data}\label{vessel-realtime-nav-data}}
 \item
   This is generally the most accurate position for the ROV, but it's
   important to confirm this with the Marine Technicians during the
-  cruise. \includegraphics{images/image17.png}
+  cruise.
 \end{itemize}
+
+\includegraphics{images/image17.png}
 
 \hypertarget{vehicle-realtime-usbl-data}{%
 \subsubsection{Vehicle Realtime USBL
@@ -657,17 +708,31 @@ Data}\label{vehicle-realtime-ctd-data}}
   \item
     Depth (m)
   \end{itemize}
-
-  \includegraphics{images/image33.png}
 \end{itemize}
+
+\includegraphics{images/image33.png}
 
 \hypertarget{vehicle-realtime-o2-data}{%
 \subsubsection{Vehicle Realtime O2
 Data}\label{vehicle-realtime-o2-data}}
 
 Values shown are corrected to account for the effects of salinity and
-pressure . Raw values are available in separate data files if needed. -
-Aanderaa Oxygen Optode - Concentration: 196.9 umol - Saturation: \%
+pressure . Raw values are available in separate data files if needed.
+
+\begin{itemize}
+\tightlist
+\item
+  Aanderaa Oxygen Optode
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Concentration: 196.9 umol
+  \item
+    Saturation: \%
+  \end{itemize}
+\end{itemize}
+
 \includegraphics{images/image30.png}
 
 \hypertarget{vehicle-realtime-paro-data}{%
@@ -678,8 +743,9 @@ Data}\label{vehicle-realtime-paro-data}}
 \tightlist
 \item
   Paroscientific Digiquartz Depth Sensor (m)
-  \includegraphics{images/image32.png}
 \end{itemize}
+
+\includegraphics{images/image32.png}
 
 \hypertarget{sealog-in-use}{%
 \section{Sealog in Use}\label{sealog-in-use}}
@@ -806,7 +872,6 @@ the templates in action.
 Event}\label{filtersearching-for-an-event}}
 
 \begin{itemize}
-\tightlist
 \item
   On the main screen, the ``Event History'' box has a filter box. It's
   important to note that this will only filter button names and wont
@@ -814,12 +879,8 @@ Event}\label{filtersearching-for-an-event}}
 \item
   The example below shows how you can filter your events to show only
   the events that are associated with ``VIDEO LOGGING.''
-\end{itemize}
 
-\includegraphics{images/image3.png}
-
-\begin{itemize}
-\tightlist
+  \includegraphics[width=0.7\textwidth,height=\textheight]{images/image3.png}
 \item
   To search keywords, navigate to the following location:
 
@@ -1097,12 +1158,11 @@ includes:
   (like sampling) need to be approved by Marine Technicians.
 \end{itemize}
 
-\bookmarksetup{startatroot}
+\appendix
+\addcontentsline{toc}{part}{Appendices}
 
 \hypertarget{appendix}{%
 \chapter{Appendix}\label{appendix}}
-
-\bookmarksetup{startatroot}
 
 \hypertarget{references}{%
 \chapter*{References}\label{references}}

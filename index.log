@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.9)  22 MAY 2023 17:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.9)  23 MAY 2023 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1181,18 +1181,18 @@ Overfull \hbox (7.30354pt too wide) in paragraph at lines 270--275
 File: images/image21.png Graphic file (type bmp)
 <images/image21.png>
 
-Overfull \hbox (62.64641pt too wide) in paragraph at lines 314--316
-\TU/lmr/m/n/10.95 ment access. [] 
+Overfull \hbox (10.9601pt too wide) in paragraph at lines 319--320
+[][] 
  []
 
 File: images/image9.png Graphic file (type bmp)
 <images/image9.png>
-[9] [10]
+[9]
 ! Unable to load picture or PDF file 'images/temp.png'.
 <to be read again> 
                    }
-l.351 \includegraphics{images/temp.png}
-                                        Some science parties may want to 
+l.360 \includegraphics{images/temp.png}
+                                        
 Here is how much of TeX's memory you used:
  37347 strings out of 477623
  787694 string characters out of 5839752
@@ -1200,6 +1200,6 @@ Here is how much of TeX's memory you used:
  57973 multiletter control sequences out of 15000+600000
  472839 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,7n,121p,10600b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,7n,121p,10600b,390s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on index.pdf (10 pages).
+Output written on index.pdf (9 pages).
