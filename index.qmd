@@ -2,4 +2,30 @@
 
 Schmidt Ocean Insititute 
 
-Public technical documentation related to data systems. 
+
+
+This will be a book that contains chapters on accessing data systems while onboard R/V Falkor (too)
+
+|   |   |
+|---|---|
+|Length Overall|110.6 meters|
+|Length between perpendiculars	|97.8 meters|
+|Beam, overall	|20.0 meters|
+|Height above water	|33.0 meters|
+|Freeboard	|2.9 – 3.5 meters|
+|Draft (gondola)	|8.5 meters|
+|Draft (air) 	|32.4 meters|
+|Depth (moulded)	|9.81 meters|
+|International Gross Tonnage	|7,257 GRT|
+|Net Tonnage	|2,250 NRT|
+|Fuel Capacity	|1715 m3 / 453,100 gallons|
+|Mess Seating	|60|
+|Maximum Transit Speed	|8.5 knots|
+|Survey Speed	|6.0 knots|
+|Endurance	|60-120 day maximum|
+|Polar Operations	|Ice Class-C, Polar Ship Certificate (Pending)|
+|Year Built / Year Converted	|2011 / 2022|
+
+: R/V *Falkor (too)* General Specifications
+
+For more information about available systems on board see [R/V *Falkor (too)* specifications](https://schmidtocean.org/falkortoo_specifications/)

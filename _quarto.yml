@@ -1,9 +1,11 @@
 project:
   type: book
   output-dir: docs
+  
 
 book:
   title: "Schmidt Ocean Institute Technical Documentation"
+  output-file: "Schmidt-Ocean-Institute-Technical-Documentation"
   author: "Schmidt Ocean Institute"
   favicon: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
   date: "5/22/2023"
@@ -11,7 +13,7 @@ book:
   repo-url: https://github.com/schmidtocean/public_technical_documentation/
   repo-actions: [edit, issue, source]
   downloads: [pdf]
-  pdf-url: index.pdf
+  pdf-url: "./docs/Schmidt-Ocean-Institute-Technical-Documentation.pdf"
   cover-image: /images/FKt230115-Falkortoo_Aerial-20230117-Ingle-0824.jpg
   sidebar:
     style: docked
@@ -19,10 +21,14 @@ book:
     logo: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
   chapters:
     - index.qmd
-    - intro.qmd
-    - datadirectory.qmd
+    - data_pipeline.qmd
+    - data_directory.qmd 
     - dashboards.qmd
-    - sealog.qmd
+    - part: sealog.qmd
+      chapters:
+        - sealog_subastian.qmd
+        - sealog_falkortoo.qmd
+  
   appendices:
     - appendix.qmd
     - references.qmd
@@ -36,11 +42,8 @@ format:
       light: spacelab
       dark: [darkly, dark.scss]
     css: custom.css
-    
-
-
   pdf:
-    documentclass: scrreprt
-
-
+    documentclass: scrbook
+    toc: true
+    
 

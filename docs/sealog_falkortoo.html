@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schmidt Ocean Institute Technical Documentation - Sealog</title>
+<title>Schmidt Ocean Institute Technical Documentation - Sealog-FKt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./sealog_subastian.html" rel="next">
-<link href="./dashboards.html" rel="prev">
+<link href="./appendix.html" rel="next">
+<link href="./sealog_subastian.html" rel="prev">
 <link href=".//images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Sealog</h1>
+      <h1 class="quarto-secondary-nav-title">Sealog-FKt</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./sealog.html" class="sidebar-item-text sidebar-link active">Sealog</a>
+            <a href="./sealog.html" class="sidebar-item-text sidebar-link">Sealog</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sealog_falkortoo.html" class="sidebar-item-text sidebar-link">Sealog-FKt</a>
+  <a href="./sealog_falkortoo.html" class="sidebar-item-text sidebar-link active">Sealog-FKt</a>
   </div>
 </li>
       </ul>
@@ -175,18 +175,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#accesiblity" id="toc-accesiblity" class="nav-link" data-scroll-target="#accesiblity">Accesiblity</a></li>
-  <li><a href="#preperation" id="toc-preperation" class="nav-link" data-scroll-target="#preperation">Preperation</a></li>
-  <li><a href="#additional-documentation" id="toc-additional-documentation" class="nav-link" data-scroll-target="#additional-documentation">Additional Documentation</a></li>
+  <li><a href="#orientation" id="toc-orientation" class="nav-link" data-scroll-target="#orientation">Orientation</a></li>
+  <li><a href="#login" id="toc-login" class="nav-link" data-scroll-target="#login">Login</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/schmidtocean/public_technical_documentation/edit/main/sealog.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/blob/main/sealog.qmd" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/schmidtocean/public_technical_documentation/edit/main/sealog_falkortoo.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/blob/main/sealog_falkortoo.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Sealog</h1>
+<h1 class="title d-none d-lg-block">Sealog-FKt</h1>
 </div>
 
 
@@ -204,22 +203,25 @@ ul.task-list li input[type="checkbox"] {
 <p>R/V Falkor (too)</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Sealog is a smart event logger. <em>R/V Falkor (too)</em> has two instance aboard the ship. One instance used for the ship, its underway systems and tracking of general information related to deployments on insturments. The seond innstance aboard is set up to log <em>ROV SuBastian</em> dives coupling key metadata (such as video framegrabs, vehicle position, vehicle depth, water temperature, etc.) with each event. Sealog can be configured for each cruise to better support a science party’s specific data logging needs. Data,information and reportscaptured and generated by Sealog are made available to the science party.</p>
+<p>Sealog for R/V <em>Falkor (too)</em> is the event logger used for underway systems, deployments, and general events during the expedition.</p>
+<p><img src="./images/sealogfkt_view.png" class="img-fluid" style="width:70.0%"></p>
 </section>
-<section id="accesiblity" class="level2">
-<h2 class="anchored" data-anchor-id="accesiblity">Accesiblity</h2>
-<p>Currently, Sealog can only be reached while onboard the ship. Sealog-FKt Sealog-Sub can be found either at 10.23.11.25/sealog-Sub/ in any web browser, or you can use the “Sealog-Subastian” link at 10.23.11.25.</p>
+<section id="orientation" class="level2">
+<h2 class="anchored" data-anchor-id="orientation">Orientation</h2>
+<p>Sealog can be found either at<a href="http://10.23.11.25/sealog-FKt/">10.23.11.25/sealog-FKt/</a> in any web browser, or you can use the “Sealog-Falkor” link at <a href="http://10.23.9.25/">10.23.11.25</a>. Currently, Sealog can only be reached while onboard the ship.</p>
 </section>
-<section id="preperation" class="level2">
-<h2 class="anchored" data-anchor-id="preperation">Preperation</h2>
-<p>Prior to an expedition, it is valuable to review the information in this doucumentation. Once aboard, the scienc eparty will be able to work with marine technicaians to adjust Sealog’s output within the documented parameters to achieve their data logging and reporting needs.</p>
-</section>
-<section id="additional-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="additional-documentation">Additional Documentation</h2>
-<ul>
-<li><a href="./sealog_falkortoo.html">Sealog-FKt</a></li>
-<li><a href="./sealog_subastian.html">Sealog-Sub</a></li>
-</ul>
+<section id="login" class="level2">
+<h2 class="anchored" data-anchor-id="login">Login</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p>We recommend that any science party member who will be logging events in this implementation of Sealog creates their own individual login forthis implementation. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="./images/sealogfktlogin.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -475,13 +477,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./dashboards.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Dashboards</span>
+      <a href="./sealog_subastian.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sealog-Subastian</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./sealog_subastian.html" class="pagination-link">
-        <span class="nav-page-text">Sealog-Subastian</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./appendix.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Appendix</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

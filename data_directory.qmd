@@ -1,0 +1,128 @@
+# Data Directory {.unnumbered}
+
+The Data Directory is shown below:
+
+* Falkor_too
+   *  [Docs](#docs)
+   *  [Processed ](#processed)    
+      * Preliminary
+         * Processed_MB
+         * Sound_Speed_Files     
+   *  [Raw](#raw)
+      *  {Sensor}
+      *  ADCP 
+      *  ADCP_BKUP  
+      *  CTD 
+      *  EA440  
+      *  EK80 
+      *  EM124 
+      *  EM712  
+      *  [OpenRVDAS](#openrvdas)  
+      *  POSMV 
+      *  Sealog 
+      *  XBT 
+      *  pH
+   *  [OpenVDM](#openvdm)   
+      * DashboardData	 
+      * [Tracklines](#tracklines)	 
+      * TransferLogs   
+   *  [ParticipantData](#participantdata)
+   *  Vehicles
+      * [SuBastian](#subastian)
+         * {CruiseID_DiveID} 
+            * [Video](#video)
+               * HDQUAD
+               * SCITOO
+               * SDQUAD
+               * SITTOO
+            * [Sealog](#sealog)
+            * [OpenRVDAS](#openrvdas)
+         *  {CruiseID_DiveID} 
+
+
+# Docs
+
+The Document folder contains all the calibration files for sensors on board *R/V Falkor(too)* and ROV *SuBastian*
+
+
+# Processed
+
+Any data that has gone through processing is found in this folder. This includes the multibeam data and sound speed files.
+Multibeam data can be found in Processed_MB then Exports.
+
+
+# Raw
+
+All raw data from sensor systems on board and deployed are curated in this folder. They are separated out by sensor system. For sensors whose data is collected individually, they are listed in individual folders. Depending on which sensors are running during an individual expedition, a different set of folders will be available. A list of commonly seen folders is shown but {Sensor} represents an individual system. A variety of underways systems whose real-time data is captured by the RVDAS collection system are inside that particular folder.
+
+
+## OpenRVDAS
+
+Files written by OpenRvdas are split into daily files and have the standard naming convention:
+
+
+Each file should contain a header line with the variable name and unit. The rows of data are timestamped by OpenRVDAS on the arrival of the udp message and otherwise, the line of raw data is written as received.
+For more information on SOI's OpenRVDAS configuration see the [OpenRVDAS](data_pipeline.qmd#openrvdas) section in the Data Pipeline Overview.
+
+
+For additional information on NMEA style messages which are captured via OpenRVDAS see the [Appendix](appendix.qmd)
+
+
+
+
+## OpenVDM
+
+These files are specific to the OpenVDM collection system.
+
+
+### Tracklines
+
+Geospatial files of the vessel track created by OpenVDM are available here in kml and json format with a subset of points along the track from at least 1 navigation system.
+
+
+
+
+## Participant Data
+
+Data added to the participant drive during the cruise is found here. When saving files and folders to the participant data directory, please use thoughtful filenames and omit spaces and punctuation other than hyphen and underscore, (i.e. exclude spaces, question marks, parenthesis, square and curly brackets from filenames as this can impact files being moved from system to system). Letters, numbers, and underscores are preferred for filenames. For more information on best practices see [Best Practices for File Naming and Organizing](https://library.si.edu/sites/default/files/tutorial/pdf/filenamingorganizing20180227.pdf)
+
+
+## Vehicles
+
+### SuBastian
+
+All data related to individual dives are separated into folders with the cruise identifier followed by the dive identifier:
+
+- {cruiseid_diveid} ex: FKt230602_S0529
+
+Inside of each folder are the video files, data files per sensor, and sealog exports per dive.
+
+
+
+
+#### Sealog
+
+includes all screengrabs, reports, dive template configuration, and the csv and json files of all of the events.
+
+- Exports from Sealog SuBastain are further described in [Sealog SuBastian Overview](sealog_subastian.qmd#diveexports). Of most interest for scientists is likely the complete csv export of tagged information, {cruiseid_diveid}_sealogExport.csv,( ex: FKt230602_S0540_sealogExport.csv)
+
+- Images folder contains all snapshots from sealog for all cameras.
+
+
+#### Video
+
+Video files captured from cameras aboard ROV *SuBastian* are saved in 10 min increments and separated by camera. Inside the subfolders, each video is of the filename {camera}_{YYYYMMDDTHHMMSSZ}.mov
+where the camera is one of HDQUAD, SDQUAD, SCIITOO, SCICAM, and the datestamp is the start time of the file in UTC.
+
+- SCICAM is the main science camera and likely the one of interest to scientists.
+
+
+
+
+#### OpenRVDAS
+
+OpenRVDAS files capturing real-time sensor data are cut into files with just dive-related data in them and separated by sensor and dive.
+
+
+
+

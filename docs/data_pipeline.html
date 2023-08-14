@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schmidt Ocean Institute Technical Documentation - Sealog</title>
+<title>Schmidt Ocean Institute Technical Documentation - Data Pipeline</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./sealog_subastian.html" rel="next">
-<link href="./dashboards.html" rel="prev">
+<link href="./data_directory.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href=".//images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Sealog</h1>
+      <h1 class="quarto-secondary-nav-title">Data Pipeline</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_pipeline.html" class="sidebar-item-text sidebar-link">Data Pipeline</a>
+  <a href="./data_pipeline.html" class="sidebar-item-text sidebar-link active">Data Pipeline</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./sealog.html" class="sidebar-item-text sidebar-link active">Sealog</a>
+            <a href="./sealog.html" class="sidebar-item-text sidebar-link">Sealog</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -174,19 +174,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#accesiblity" id="toc-accesiblity" class="nav-link" data-scroll-target="#accesiblity">Accesiblity</a></li>
-  <li><a href="#preperation" id="toc-preperation" class="nav-link" data-scroll-target="#preperation">Preperation</a></li>
-  <li><a href="#additional-documentation" id="toc-additional-documentation" class="nav-link" data-scroll-target="#additional-documentation">Additional Documentation</a></li>
+  <li><a href="#ship-overview" id="toc-ship-overview" class="nav-link active" data-scroll-target="#ship-overview">Ship Overview</a>
+  <ul class="collapse">
+  <li><a href="#openrvdas" id="toc-openrvdas" class="nav-link" data-scroll-target="#openrvdas">OpenRVDAS</a></li>
+  <li><a href="#openvdm" id="toc-openvdm" class="nav-link" data-scroll-target="#openvdm">OpenVDM</a></li>
+  <li><a href="#influxdb" id="toc-influxdb" class="nav-link" data-scroll-target="#influxdb">InfluxDB</a></li>
+  <li><a href="#grafana" id="toc-grafana" class="nav-link" data-scroll-target="#grafana">Grafana</a></li>
+  </ul></li>
+  <li><a href="#shore-overview" id="toc-shore-overview" class="nav-link" data-scroll-target="#shore-overview">Shore Overview</a>
+  <ul class="collapse">
+  <li><a href="#cloud-infrastructure" id="toc-cloud-infrastructure" class="nav-link" data-scroll-target="#cloud-infrastructure">Cloud Infrastructure</a></li>
+  </ul></li>
+  <li><a href="#public-repositories" id="toc-public-repositories" class="nav-link" data-scroll-target="#public-repositories">Public Repositories</a></li>
+  <li><a href="#public-access" id="toc-public-access" class="nav-link" data-scroll-target="#public-access">Public Access</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/schmidtocean/public_technical_documentation/edit/main/sealog.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/blob/main/sealog.qmd" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/schmidtocean/public_technical_documentation/edit/main/data_pipeline.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/blob/main/data_pipeline.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Sealog</h1>
+<h1 class="title d-none d-lg-block">Data Pipeline</h1>
 </div>
 
 
@@ -201,25 +210,44 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>R/V Falkor (too)</p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Sealog is a smart event logger. <em>R/V Falkor (too)</em> has two instance aboard the ship. One instance used for the ship, its underway systems and tracking of general information related to deployments on insturments. The seond innstance aboard is set up to log <em>ROV SuBastian</em> dives coupling key metadata (such as video framegrabs, vehicle position, vehicle depth, water temperature, etc.) with each event. Sealog can be configured for each cruise to better support a science party’s specific data logging needs. Data,information and reportscaptured and generated by Sealog are made available to the science party.</p>
-</section>
-<section id="accesiblity" class="level2">
-<h2 class="anchored" data-anchor-id="accesiblity">Accesiblity</h2>
-<p>Currently, Sealog can only be reached while onboard the ship. Sealog-FKt Sealog-Sub can be found either at 10.23.11.25/sealog-Sub/ in any web browser, or you can use the “Sealog-Subastian” link at 10.23.11.25.</p>
-</section>
-<section id="preperation" class="level2">
-<h2 class="anchored" data-anchor-id="preperation">Preperation</h2>
-<p>Prior to an expedition, it is valuable to review the information in this doucumentation. Once aboard, the scienc eparty will be able to work with marine technicaians to adjust Sealog’s output within the documented parameters to achieve their data logging and reporting needs.</p>
-</section>
-<section id="additional-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="additional-documentation">Additional Documentation</h2>
+<p>Data, files, and information are collected from sensors and computer systems and then written and/or moved to a central location. Depending on the indiviual system, and how data is captured, the route the data takes as well as the structure of file containging the information differs. An overview of this system is described here.</p>
+<p>NOTE: On the ship you can easily access some of the data described below through : <a href="http://10.23.9.25/">http://10.23.9.25/</a></p>
+<section id="ship-overview" class="level2">
+<h2 class="anchored" data-anchor-id="ship-overview">Ship Overview</h2>
+<section id="openrvdas" class="level3">
+<h3 class="anchored" data-anchor-id="openrvdas">OpenRVDAS</h3>
+<p>“OpenRVDAS <a href="https://openrvdas.org/">Open Research Vessel Data Acquisition System</a> is a Python-based open source architecture intended to allow easy creation of customized data acquisition systems for research vessels and other scientific installations.” - https://openrvdas.org/</p>
 <ul>
-<li><a href="./sealog_falkortoo.html">Sealog-FKt</a></li>
-<li><a href="./sealog_subastian.html">Sealog-Sub</a></li>
+<li>OpenRVDAS is used aboard R/V <em>Falkor (too)</em> to gather and compile data from many systems.</li>
 </ul>
+</section>
+<section id="openvdm" class="level3">
+<h3 class="anchored" data-anchor-id="openvdm">OpenVDM</h3>
+<p>“OpenVDM <a href="https://github.com/OceanDataTools/openvdm">Open Vessel Data Management</a> is a ship-wide data management platform. It is comprised of a suite of programs and an accompanying web-application that provides vessel operators with a unified at-sea solution for retrieving and organizing files from multiple data acquisition systems into a unified cruise data package.” - https://github.com/ OceanDataTools/openvdm</p>
+<ul>
+<li>OpenVDM is used aboard R/V <em>Falkor (too)</em>.</li>
+</ul>
+</section>
+<section id="influxdb" class="level3">
+<h3 class="anchored" data-anchor-id="influxdb">InfluxDB</h3>
+<p><a href="https://www.influxdata.com/">InfluxDB</a> is an open source timeseries database used to capture real-time data and allow for redistribution, alerting, and interface abaoard R/V <em>Falkor (too)</em></p>
+</section>
+<section id="grafana" class="level3">
+<h3 class="anchored" data-anchor-id="grafana">Grafana</h3>
+<p>Dashboarding software used to allow real-time data viewing on R/V <em>Falkor (too)</em></p>
+</section>
+</section>
+<section id="shore-overview" class="level2">
+<h2 class="anchored" data-anchor-id="shore-overview">Shore Overview</h2>
+<section id="cloud-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="cloud-infrastructure">Cloud Infrastructure</h3>
+</section>
+</section>
+<section id="public-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="public-repositories">Public Repositories</h2>
+</section>
+<section id="public-access" class="level2">
+<h2 class="anchored" data-anchor-id="public-access">Public Access</h2>
 
 
 </section>
@@ -475,13 +503,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./dashboards.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Dashboards</span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./sealog_subastian.html" class="pagination-link">
-        <span class="nav-page-text">Sealog-Subastian</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./data_directory.html" class="pagination-link">
+        <span class="nav-page-text">Data Directory</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

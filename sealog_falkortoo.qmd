@@ -1,0 +1,28 @@
+# Sealog-FKt {.unnumbered}
+
+R/V Falkor (too)
+
+## Overview
+
+Sealog for R/V *Falkor (too)* is the event logger used for underway systems, deployments, and general events during the expedition.
+
+![](./images/sealogfkt_view.png){width=70%}
+
+
+## Orientation 
+Sealog can be found either at[10.23.11.25/sealog-FKt/](http://10.23.11.25/sealog-FKt/) in any web browser, or you can use the “Sealog-Falkor” link at [10.23.11.25](http://10.23.9.25/). Currently,  Sealog can only be reached while onboard the ship. 
+
+## Login
+
+:::{layout-ncol="2"}
+We recommend that any science party member who will be logging events in this implementation of Sealog creates their own individual login forthis implementation. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations. 
+
+
+
+![](./images/sealogfktlogin.png){width=60%}
+
+:::
+
+
+
+

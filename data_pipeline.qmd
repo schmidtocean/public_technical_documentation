@@ -1,0 +1,38 @@
+# Data Pipeline {.unnumbered}
+
+Data, files, and information are collected from sensors and computer systems and then written and/or moved to a central location. Depending on the indiviual system, and how data is captured, the route the data takes as well as the structure of file containging the information differs. An overview of this system is described here. 
+
+NOTE: On the ship you can easily access some of the data described below through :
+[http://10.23.9.25/](http://10.23.9.25/)
+
+## Ship Overview
+
+### OpenRVDAS
+
+"OpenRVDAS [Open Research Vessel Data Acquisition System](https://openrvdas.org/) is a Python-based open source architecture intended to allow easy creation of customized data acquisition systems for research vessels and other scientific installations." - https://openrvdas.org/
+
+- OpenRVDAS is used aboard R/V *Falkor (too)* to gather and compile data from many systems.
+
+
+### OpenVDM
+
+"OpenVDM [Open Vessel Data Management](https://github.com/OceanDataTools/openvdm) is a ship-wide data management platform. It is comprised of a suite of programs and an accompanying web-application that provides vessel operators with a unified at-sea solution for retrieving and organizing files from multiple data acquisition systems into a unified cruise data package. " - https://github.com/
+OceanDataTools/openvdm
+
+- OpenVDM is used aboard R/V *Falkor (too)*.
+
+### InfluxDB
+
+[InfluxDB](https://www.influxdata.com/) is an open source timeseries database used to capture real-time data and allow for redistribution, alerting, and interface abaoard R/V *Falkor (too)*
+
+### Grafana
+
+Dashboarding software used to allow real-time data viewing on R/V *Falkor (too)*
+
+## Shore Overview
+
+### Cloud Infrastructure
+
+## Public Repositories
+
+## Public Access
