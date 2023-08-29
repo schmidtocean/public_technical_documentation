@@ -35,18 +35,25 @@
     "text": "Public Access"
   },
   {
-    "objectID": "data_directory.html",
-    "href": "data_directory.html",
+    "objectID": "data_directory.html#docs",
+    "href": "data_directory.html#docs",
     "title": "Data Directory",
-    "section": "",
-    "text": "Docs\nThe Document folder contains all the calibration files for sensors on board R/V Falkor(too) and ROV SuBastian\nAny data that has gone through processing is found in this folder. This includes the multibeam data and sound speed files. Multibeam data can be found in Processed_MB then Exports.\nAll raw data from sensor systems on board and deployed are curated in this folder. They are separated out by sensor system. For sensors whose data is collected individually, they are listed in individual folders. Depending on which sensors are running during an individual expedition, a different set of folders will be available. A list of commonly seen folders is shown but {Sensor} represents an individual system. A variety of underways systems whose real-time data is captured by the RVDAS collection system are inside that particular folder."
+    "section": "Docs",
+    "text": "Docs\nThe Document folder contains all the calibration files for sensors on board R/V Falkor(too) and ROV SuBastian"
   },
   {
-    "objectID": "data_directory.html#openrvdas",
-    "href": "data_directory.html#openrvdas",
+    "objectID": "data_directory.html#processed",
+    "href": "data_directory.html#processed",
     "title": "Data Directory",
-    "section": "OpenRVDAS",
-    "text": "OpenRVDAS\nFiles written by OpenRvdas are split into daily files and have the standard naming convention:\nEach file should contain a header line with the variable name and unit. The rows of data are timestamped by OpenRVDAS on the arrival of the udp message and otherwise, the line of raw data is written as received. For more information on SOI’s OpenRVDAS configuration see the OpenRVDAS section in the Data Pipeline Overview.\nFor additional information on NMEA style messages which are captured via OpenRVDAS see the Appendix"
+    "section": "Processed",
+    "text": "Processed\nAny data that has gone through processing is found in this folder. This includes the multibeam data and sound speed files. Multibeam data can be found in Processed_MB then Exports."
+  },
+  {
+    "objectID": "data_directory.html#raw",
+    "href": "data_directory.html#raw",
+    "title": "Data Directory",
+    "section": "Raw",
+    "text": "Raw\nAll raw data from sensor systems on board and deployed are curated in this folder. They are separated out by sensor system. For sensors whose data is collected individually, they are listed in individual folders. Depending on which sensors are running during an individual expedition, a different set of folders will be available. A list of commonly seen folders is shown but {Sensor} represents an individual system. A variety of underways systems whose real-time data is captured by the RVDAS collection system are inside that particular folder.\n\nOpenRVDAS\nFiles written by OpenRvdas are split into daily files and have the standard naming convention:\nEach file should contain a header line with the variable name and unit. The rows of data are timestamped by OpenRVDAS on the arrival of the udp message and otherwise, the line of raw data is written as received. For more information on SOI’s OpenRVDAS configuration see the OpenRVDAS section in the Data Pipeline Overview.\nFor additional information on NMEA style messages which are captured via OpenRVDAS see the Appendix"
   },
   {
     "objectID": "data_directory.html#openvdm",
@@ -117,6 +124,27 @@
     "title": "Sealog",
     "section": "Additional Documentation",
     "text": "Additional Documentation\n\nSealog-FKt\nSealog-Sub"
+  },
+  {
+    "objectID": "sealog_falkortoo.html#overview",
+    "href": "sealog_falkortoo.html#overview",
+    "title": "Sealog-FKt",
+    "section": "Overview",
+    "text": "Overview\nSealog for R/V Falkor (too) is the event logger used for underway systems, deployments, and general events during the expedition."
+  },
+  {
+    "objectID": "sealog_falkortoo.html#orientation",
+    "href": "sealog_falkortoo.html#orientation",
+    "title": "Sealog-FKt",
+    "section": "Orientation",
+    "text": "Orientation\nSealog can be found either at10.23.11.25/sealog-FKt/ in any web browser, or you can use the “Sealog-Falkor” link at 10.23.11.25. Currently, Sealog can only be reached while onboard the ship."
+  },
+  {
+    "objectID": "sealog_falkortoo.html#login",
+    "href": "sealog_falkortoo.html#login",
+    "title": "Sealog-FKt",
+    "section": "Login",
+    "text": "Login\n\n\n\nWe recommend that any science party member who will be logging events in this implementation of Sealog creates their own individual login forthis implementation. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations."
   },
   {
     "objectID": "sealog_subastian.html#overview",
@@ -194,27 +222,6 @@
     "title": "Sealog-Subastian",
     "section": "Frequently Asked Questions",
     "text": "Frequently Asked Questions\n\nIs it possible to log an event in the past?\nYes, at the bottom of each event template entry, there is an option for “Custom Time (UTC).” This can be used to adjust the time of the event, however Sealog will not grab past metadata for this entry.\nWhich ROV Depth value is most accurate?\nAccuracy for depth is very much dependent on several factors (sensor calibration, depth, latitude, etc) your best option is to ask the MT’s on your cruise.\nThere are multiple positions in the metadata, which ones should I use?”\nUSBL position is solely based on the USBL underwater tracking of the vehicle. The Realtime Nav Data is SuBastian’s INS, which takes into account several inputs to make an educated calculation on position. In general, Realtime Nav Data is the position you should be using, but always ask the MT’s on your cruise.\nCan I delete an event?\nOnly system administrators have the ability to delete an event, but you can ask an MT to delete it for you if needed.\nCan I edit a past event?\nYou cannot edit a past event, but you can add a “comment” to the event where you can correct or add more information.\nWhen I search for a known event, nothing is shown.\nGreat Question! We are still working on this one :)\nCan I review the dive after it is over?\nYes, while on the ship you can review the dive. All of the data during the dive is being transferred to the PI-NAS, which you’ll have access to throughout the cruise. Shortly after the end of a dive, the dive summary and screengrabs will be available on the PI-Nas.\nCan I replay a dive?\nUnder Review Cruises/Dives, after you’ve navigated to the correct year, cruiseID and dive number, you can select “Replay” which will allow you to step through every event logged during that dive.\nAm I able to login to Salog after I am off the ship?\nCurrently this is not available, however all data associated with Sealog is found in your Cruise Data Folder under each dive.\nWhat if I forgot to screen grab an event?\nSealog has a feature called “ASNAP” that takes a screengrab on a designated timed interval. The default is set to 1 per minute, but depending on your needs, you can make this more or less frequent. Speak to the Marine Technicians about changing your ASNAP interval.\nCan we change templates after initial configuration?\nYes of course, you can change templates to better fit your needs anytime, but it’s recommended that you spend time prior to the first dive to get the dive templates to fit your needs. Certain templates (like sampling) need to be approved by Marine Technicians.\nCan we use the same account for both instances of Sealog ( SuBastian and Falkor)?\nNo, currently these systems are independant and you will need to create a new user for each."
-  },
-  {
-    "objectID": "sealog_falkortoo.html#overview",
-    "href": "sealog_falkortoo.html#overview",
-    "title": "Sealog-FKt",
-    "section": "Overview",
-    "text": "Overview\nSealog for R/V Falkor (too) is the event logger used for underway systems, deployments, and general events during the expedition."
-  },
-  {
-    "objectID": "sealog_falkortoo.html#orientation",
-    "href": "sealog_falkortoo.html#orientation",
-    "title": "Sealog-FKt",
-    "section": "Orientation",
-    "text": "Orientation\nSealog can be found either at10.23.11.25/sealog-FKt/ in any web browser, or you can use the “Sealog-Falkor” link at 10.23.11.25. Currently, Sealog can only be reached while onboard the ship."
-  },
-  {
-    "objectID": "sealog_falkortoo.html#login",
-    "href": "sealog_falkortoo.html#login",
-    "title": "Sealog-FKt",
-    "section": "Login",
-    "text": "Login\n\n\n\nWe recommend that any science party member who will be logging events in this implementation of Sealog creates their own individual login forthis implementation. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations."
   },
   {
     "objectID": "appendix.html#nmea-referrence",

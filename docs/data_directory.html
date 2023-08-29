@@ -135,12 +135,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sealog_subastian.html" class="sidebar-item-text sidebar-link">Sealog-Subastian</a>
+  <a href="./sealog_falkortoo.html" class="sidebar-item-text sidebar-link">Sealog-FKt</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sealog_falkortoo.html" class="sidebar-item-text sidebar-link">Sealog-FKt</a>
+  <a href="./sealog_subastian.html" class="sidebar-item-text sidebar-link">Sealog-SuBastian</a>
   </div>
 </li>
       </ul>
@@ -179,6 +179,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#raw" id="toc-raw" class="nav-link" data-scroll-target="#raw">Raw</a>
   <ul class="collapse">
   <li><a href="#openrvdas" id="toc-openrvdas" class="nav-link" data-scroll-target="#openrvdas">OpenRVDAS</a></li>
+  </ul></li>
   <li><a href="#openvdm" id="toc-openvdm" class="nav-link" data-scroll-target="#openvdm">OpenVDM</a>
   <ul class="collapse">
   <li><a href="#tracklines" id="toc-tracklines" class="nav-link" data-scroll-target="#tracklines">Tracklines</a></li>
@@ -187,7 +188,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#vehicles" id="toc-vehicles" class="nav-link" data-scroll-target="#vehicles">Vehicles</a>
   <ul class="collapse">
   <li><a href="#subastian" id="toc-subastian" class="nav-link" data-scroll-target="#subastian">SuBastian</a></li>
-  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/schmidtocean/public_technical_documentation/edit/main/data_directory.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/schmidtocean/public_technical_documentation/blob/main/data_directory.qmd" class="toc-action">View source</a></p></div></div></nav>
@@ -213,6 +213,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>The Data Directory is shown below:</p>
+<div>
 <ul>
 <li>Falkor_too
 <ul>
@@ -277,22 +278,24 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul></li>
 </ul>
-<section id="docs" class="level1">
-<h1>Docs</h1>
+</div>
+<section id="docs" class="level2">
+<h2 class="anchored" data-anchor-id="docs">Docs</h2>
 <p>The Document folder contains all the calibration files for sensors on board <em>R/V Falkor(too)</em> and ROV <em>SuBastian</em></p>
 </section>
-<section id="processed" class="level1">
-<h1>Processed</h1>
+<section id="processed" class="level2">
+<h2 class="anchored" data-anchor-id="processed">Processed</h2>
 <p>Any data that has gone through processing is found in this folder. This includes the multibeam data and sound speed files. Multibeam data can be found in Processed_MB then Exports.</p>
 </section>
-<section id="raw" class="level1">
-<h1>Raw</h1>
+<section id="raw" class="level2">
+<h2 class="anchored" data-anchor-id="raw">Raw</h2>
 <p>All raw data from sensor systems on board and deployed are curated in this folder. They are separated out by sensor system. For sensors whose data is collected individually, they are listed in individual folders. Depending on which sensors are running during an individual expedition, a different set of folders will be available. A list of commonly seen folders is shown but {Sensor} represents an individual system. A variety of underways systems whose real-time data is captured by the RVDAS collection system are inside that particular folder.</p>
-<section id="openrvdas" class="level2">
-<h2 class="anchored" data-anchor-id="openrvdas">OpenRVDAS</h2>
+<section id="openrvdas" class="level3">
+<h3 class="anchored" data-anchor-id="openrvdas">OpenRVDAS</h3>
 <p>Files written by OpenRvdas are split into daily files and have the standard naming convention:</p>
 <p>Each file should contain a header line with the variable name and unit. The rows of data are timestamped by OpenRVDAS on the arrival of the udp message and otherwise, the line of raw data is written as received. For more information on SOI’s OpenRVDAS configuration see the <a href="./data_pipeline.html#openrvdas">OpenRVDAS</a> section in the Data Pipeline Overview.</p>
 <p>For additional information on NMEA style messages which are captured via OpenRVDAS see the <a href="./appendix.html">Appendix</a></p>
+</section>
 </section>
 <section id="openvdm" class="level2">
 <h2 class="anchored" data-anchor-id="openvdm">OpenVDM</h2>
@@ -335,7 +338,6 @@ ul.task-list li input[type="checkbox"] {
 <p>OpenRVDAS files capturing real-time sensor data are cut into files with just dive-related data in them and separated by sensor and dive.</p>
 
 
-</section>
 </section>
 </section>
 </section>

@@ -8,7 +8,7 @@ book:
   output-file: "Schmidt-Ocean-Institute-Technical-Documentation"
   author: "Schmidt Ocean Institute"
   favicon: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
-  date: "5/22/2023"
+  date: "8/29/2023"
   search: true
   repo-url: https://github.com/schmidtocean/public_technical_documentation/
   repo-actions: [edit, issue, source]
@@ -26,8 +26,12 @@ book:
     - dashboards.qmd
     - part: sealog.qmd
       chapters:
-        - sealog_subastian.qmd
         - sealog_falkortoo.qmd
+        - sealog_subastian.qmd
+    # - sealog.qmd
+    # - sealog_falkortoo.qmd
+    # - sealog_subastian.qmd
+    
   
   appendices:
     - appendix.qmd
@@ -43,7 +47,9 @@ format:
       dark: [darkly, dark.scss]
     css: custom.css
   pdf:
-    documentclass: scrbook
+    documentclass: scrreport
     toc: true
+    colorlinks: true
+
     
 
