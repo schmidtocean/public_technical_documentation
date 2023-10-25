@@ -21,9 +21,17 @@ book:
     logo: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
   chapters:
     - index.qmd
-    - data_pipeline.qmd
-    - data_directory.qmd 
-    - dashboards.qmd
+    - part: Science Onboard
+      chapters:
+      - ship_documentation.qmd
+      - science_party_orientation.qmd
+      - lab_orientation.qmd
+      - science_overview.qmd
+    - part: Data
+      chapters:
+      - data_pipeline.qmd
+      - data_directory.qmd 
+      - dashboards.qmd
     - part: sealog.qmd
       chapters:
         - sealog_falkortoo.qmd
@@ -42,6 +50,9 @@ bibliography: references.bib
 
 format:
   html:
+    header-includes: |
+      <link rel="stylesheet" media="screen" href="https://fonts.google.com/specimen/Oswald" type="text/css"/>
+      <link rel="stylesheet" media="screen" href="https://fonts.google.com/specimen/EB+Garamond" type="text/css"/>
     theme:
       light: spacelab
       dark: [darkly, dark.scss]

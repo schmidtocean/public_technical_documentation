@@ -1,3 +1,21 @@
-# Appendix
+# Sensor List
 
-## NMEA Referrence
+
+```{ojs}
+//| echo: false
+sensors = FileAttachment("/data/sensorlist_temp.csv").csv({typed: true})
+viewof search = Inputs.search(sensors)
+Inputs.table(search,{
+format: {
+    Link: (links) =>links.includes("None") ? "None": htl.html`<a href=${links} target=_blank>${links}</a>`
+  },
+  rows: 60
+  })
+
+````
+
+# Data Corrections
+
+# Derived Data
+
+# NMEA Referrence

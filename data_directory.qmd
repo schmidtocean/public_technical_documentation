@@ -124,7 +124,7 @@ includes all screengrabs, reports, dive template configuration, and the csv and 
 Video files captured from cameras aboard ROV *SuBastian* are saved in 10 min increments and separated by camera. Inside the subfolders, each video is of the filename {camera}_{YYYYMMDDTHHMMSSZ}.mov
 where the camera is one of HDQUAD, SDQUAD, SCIITOO, SCICAM, and the datestamp is the start time of the file in UTC.
 
-- SCICAM is the main science camera and likely the one of interest to scientists.
+- SCICAM is the main science camera and likely the one of interest to scientists. The data distribution will contian either SCICAM or SCITOO. These are from the same camera. 
 
 
 
