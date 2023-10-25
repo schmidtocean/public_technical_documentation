@@ -1,5 +1,5 @@
 # Sealog-SuBastian {.unnumbered}
-R/V Falkor (too)
+R/V Falkor (too) 
 
 ## Overview
 Sealog SuBastian is a smart event logger for ROV SuBastian dives that couples key metadata (such as video framegrabs, vehicle position, vehicle depth, water temperature, etc.) with each event. Sealog can be configured for each cruise to better support a science party's specific data logging needs. After each dive, Sealog creates an extensive “Dive Summary PDF” with all the events recorded during the dive, along with other useful graphics. 
