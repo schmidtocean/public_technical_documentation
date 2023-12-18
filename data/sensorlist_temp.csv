@@ -1,4 +1,4 @@
-system,generic name	make and model,Link,file name,Folders,primary/seondary,location,type
+system,generic name,make and model,Link,file name,Folders,primary/seondary,location,type
 underway seawater,temperature,Sea-Bird Electronics model 45,https://www.seabird.com/sbe45-thermosalinograph,{cruiseid}_tsg_sbe_45_1,/Falkor_too/RAW/OpenRVDAS/,primary,seawater lab,sensor output
 underway seawater,temperature,Sea-Bird Electronics model 45,https://www.seabird.com/sbe45-thermosalinograph,{cruiseid}_tsg_sbe_45_2,/Falkor_too/RAW/OpenRVDAS/,secondary,seawater lab,sensor output
 underway seawater,salinity,Sea-Bird Electronics model 45,https://www.seabird.com/sbe45-thermosalinograph,{cruiseid}_tsg_sbe_45_1,/Falkor_too/RAW/OpenRVDAS/,primary,seawater lab,sensor output
