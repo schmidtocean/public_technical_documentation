@@ -1,1 +1,13 @@
-# Falkor (too) {.unnumbered}
+# Ship Systems Overview {.unnumbered}
+
+## Gondola Science System
+![](./images/tech_gondola.png)
+
+## Meteorological Systems
+
+![](./images/foremast_met_sensors.png)
+
+## Seawater System
+
+## Lab 
+

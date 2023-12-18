@@ -57,6 +57,7 @@ format:
       light: spacelab
       dark: [darkly, dark.scss]
     css: custom.css
+    lightbox: true
   pdf:
     documentclass: scrreport
     toc: true

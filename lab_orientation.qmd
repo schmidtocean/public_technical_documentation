@@ -1,1 +1,7 @@
 # Lab Orientation {.unnumbered}
+
+## Lab Equiptment
+- Fume Hoods
+- Snokel Hoods
+- Laminar Flow Hoods
+- Liquid Nitrogen Drawers
