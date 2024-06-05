@@ -59,10 +59,10 @@ format:
     css: custom.css
     lightbox: true
     toc-depth: 4
-  pdf:
-    documentclass: scrreport
-    toc: true
-    colorlinks: true
+  # pdf:
+  #   documentclass: scrreport
+  #   toc: true
+  #   colorlinks: true
 
     
 
