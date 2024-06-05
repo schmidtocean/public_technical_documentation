@@ -8,20 +8,20 @@ Sealog SuBastian is a smart event logger for ROV SuBastian dives that couples ke
 Sealog can be found either at 10.23.11.25/sealog-Sub/ in any web browser, or you can use the “Sealog-Subastian” link at 10.23.11.25. After your cruise, the archived data of your cruise will be sent to a cloud based server which will give you access to the sealog GUI after you have left the ship. You will be contacted when your data is available on the cloud.
 
 ### Glossary of Sealog Terms
-- ASNAP (Automatic Snapshots): At a configurable interval (usually 60s), the system automatically captures snapshots of available video and science sensor data.
-- Button: A clickable graphical element associated with an event template to initiate the start of an event.
-- Button Name: Title of the button.
-- Event: Any occurance that is logged within sealog via an Event Template or Free Text entry.
-- Event Template: A template configured by the science party to indicate a certain event and to propmt desired information from the data logger.
-- Event Value: A defined label for event templates that allows for grouping of multiple event templates under a common category.
-- Event Options: Configurable options to prompt desired information for a certain event. 
-- Free Text: A way of creating an event without needing an event template.
-- Metadata: A set of data that is included to indicate the environmental conditions during the creation of an event in Sealog.
-- Milestone: Certain key events during a dive that get logged by technicians via system templates. 
-- Sample: A small part or quanity to determine what the whole is like. The Chief Scientist can decide what they define as a sample for their cruise. 
-- System Template: A template triggers vehicle/dive milestones. These are created and monitored by technicians.
-- Template: A prompt for a certain event that often requests user provided information.
-- Template Categories: A graphical element on the Sealog homepage that groups buttons into userdefined categories.
+- **ASNAP (Automatic Snapshots):** At a configurable interval (usually 60s), the system automatically captures snapshots of available video and science sensor data.
+- **Button:** A clickable graphical element associated with an event template to initiate the start of an event.
+- **Button Name:** Title of the button.
+- **Event:** Any occurance that is logged within sealog via an Event Template or Free Text entry.
+- **Event Template:** A template configured by the science party to indicate a certain event and to propmt desired information from the data logger.
+- **Event Value:** A defined label for event templates that allows for grouping of multiple event templates under a common category.
+- **Event Options:** Configurable options to prompt desired information for a certain event. 
+- **Free Text:** A way of creating an event without needing an event template.
+- **Metadata:** A set of data that is included to indicate the environmental conditions during the creation of an event in Sealog.
+- **Milestone:** Certain key events during a dive that get logged by technicians via system templates. 
+- **Sample:** A small part or quanity to determine what the whole is like. The Chief Scientist can decide what they define as a sample for their cruise. 
+- **System Template:** A template triggers vehicle/dive milestones. These are created and monitored by technicians.
+- **Template:** A prompt for a certain event that often requests user provided information.
+- **Template Categories:** A graphical element on the Sealog homepage that groups buttons into userdefined categories.
 
 ### Login
 We recommend that each science party member create their own individual login for Sealog. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations. 
@@ -406,7 +406,7 @@ Each dive, a summary report gets produced which includes the following informati
 
 - Problems
 
-		Any problems (either vehicle or science related) for the dive. 
+	Any problems (either vehicle or science related) for the dive. 
 
 ![](/images/image24.png)
 
@@ -418,7 +418,7 @@ Each dive, a summary report gets produced which includes the following informati
 
 - Event Value Table
 
-		Each Event Value gets its own table with metadata for each individual event. 
+	Each Event Value gets its own table with metadata for each individual event. 
 
 ![](/images/image27.png)	
 
@@ -437,50 +437,50 @@ This report is meant to be a summary of events that the ROV pilots can use to ke
 
 ## Frequently Asked Questions
 
-- Is it possible to log an event in the past?
+- **Is it possible to log an event in the past?**
 
   Yes, at the bottom of each event template entry, there is an option for “Custom Time (UTC).” This can be used to adjust the time of the event, however Sealog will not grab past metadata for this entry. 
 
-- Which ROV Depth value is most accurate?
+- **Which ROV Depth value is most accurate?**
 
   Accuracy for depth is very much dependent on several factors (sensor calibration, depth, latitude, etc) your best option is to ask the MT’s on your cruise. 
 
-- There are multiple positions in the metadata, which ones should I use?”
+- **There are multiple positions in the metadata, which ones should I use?”**
 
   USBL position is solely based on the USBL underwater tracking of the vehicle. The Realtime Nav Data is SuBastian’s INS, which takes into account several inputs to make an educated calculation on position. In general, Realtime Nav Data is the position you should be using, but always ask the MT’s on your cruise. 
 
-- Can I delete an event? 
+- **Can I delete an event?** 
 
   Only system administrators have the ability to delete an event, but you can ask an MT to delete it for you if needed. 
 
-- Can I edit a past event?
+- **Can I edit a past event?**
 
   You cannot edit a past event, but you can add a “comment” to the event where you can correct or add more information. 
 
-- When I search for a known event, nothing is shown.
+- **When I search for a known event, nothing is shown.**
 
   Great Question! We are still working on this one :) 
 
-- Can I review the dive after it is over?
+- **Can I review the dive after it is over?**
 
   Yes, while on the ship you can review the dive. All of the data during the dive is being transferred to the PI-NAS, which you’ll have access to throughout the cruise. Shortly after the end of a dive, the dive summary and screengrabs will be available on the PI-Nas. 
 
-- Can I replay a dive?
+- **Can I replay a dive?**
 
   Under Review Cruises/Dives, after you’ve navigated to the correct year, cruiseID and dive number, you can select “Replay” which will allow you to step through every event logged during that dive. 
 
-- Am I able to login to Salog after I am off the ship?
+- **Am I able to login to Sealog after I am off the ship?**
 
-  Currently this is not available, however all data associated with Sealog is found in your Cruise Data Folder under each dive.
+  We are in beta testing for a program called Sea Cloud, which is a cloud based server that allows for Sealog access after your cruise. You will be contacted when your data is available.
 
-- What if I forgot to screen grab an event?
+- **What if I forgot to screen grab an event?**
 
   Sealog has a feature called “ASNAP” that takes a screengrab on a designated timed interval. The default is set to 1 per minute, but depending on your needs, you can make this more or less frequent. Speak to the Marine Technicians about changing your ASNAP interval.
 
-- Can we change templates after initial configuration?
+- **Can we change templates after initial configuration?**
 
   Yes of course, you can change templates to better fit your needs anytime, but it's recommended that you spend time prior to the first dive to get the dive templates to fit your needs. Certain templates (like sampling) need to be approved by Marine Technicians. 
 
-- Can we use the same account for both instances of Sealog ( SuBastian and Falkor)?
+- **Can we use the same account for both instances of Sealog ( SuBastian and Falkor)?**
 
-  No, currently these systems are independant and you will need to create a new user for each. 
+  No, currently these systems are independent and you will need to create a new user for each. You can, however, have the same username and passwords for both. 
