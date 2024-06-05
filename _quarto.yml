@@ -60,7 +60,7 @@ format:
     lightbox: true
     toc-depth: 4
   pdf:
-    documentclass: scrreport
+    documentclass: scrbook
     toc: true
     toc-depth: 3
     colorlinks: true
