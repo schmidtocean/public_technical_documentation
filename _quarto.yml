@@ -58,6 +58,7 @@ format:
       dark: [darkly, dark.scss]
     css: custom.css
     lightbox: true
+    toc-depth: 4
   pdf:
     documentclass: scrreport
     toc: true

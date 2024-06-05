@@ -2,196 +2,222 @@
 R/V Falkor (too) 
 
 ## Overview
-Sealog SuBastian is a smart event logger for ROV SuBastian dives that couples key metadata (such as video framegrabs, vehicle position, vehicle depth, water temperature, etc.) with each event. Sealog can be configured for each cruise to better support a science party's specific data logging needs. After each dive, Sealog creates an extensive “Dive Summary PDF” with all the events recorded during the dive, along with other useful graphics. 
+Sealog SuBastian is a smart event logger for ROV SuBastian dives that couples key metadata (such as video framegrabs, vehicle navigation data, vessel navigation data, vehicle science sensors data, and more) with each event. Sealog can be configured for each cruise to support a science party's specific data logging needs. After each dive, Sealog creates an extensive “Dive Summary PDF” and an CSV (spreadsheet) for all the events captured during a dive.
 
 ## Orientation 
-Sealog can be found either at 10.23.11.25/sealog-Sub/ in any web browser, or you can use the “Sealog-Subastian” link at 10.23.11.25. Currently,  Sealog can only be reached while onboard the ship. 
+Sealog can be found either at 10.23.11.25/sealog-Sub/ in any web browser, or you can use the “Sealog-Subastian” link at 10.23.11.25. After your cruise, the archived data of your cruise will be sent to a cloud based server which will give you access to the sealog GUI after you have left the ship. You will be contacted when your data is available on the cloud.
 
-## Login
+### Glossary of Sealog Terms
+- ASNAP (Automatic Snapshots): At a configurable interval (usually 60s), the system automatically captures snapshots of available video and science sensor data.
+- Button: A clickable graphical element associated with an event template to initiate the start of an event.
+- Button Name: Title of the button.
+- Event: Any occurance that is logged within sealog via an Event Template or Free Text entry.
+- Event Template: A template configured by the science party to indicate a certain event and to propmt desired information from the data logger.
+- Event Value: A defined label for event templates that allows for grouping of multiple event templates under a common category.
+- Event Options: Configurable options to prompt desired information for a certain event. 
+- Free Text: A way of creating an event without needing an event template.
+- Metadata: A set of data that is included to indicate the environmental conditions during the creation of an event in Sealog.
+- Milestone: Certain key events during a dive that get logged by technicians via system templates. 
+- Sample: A small part or quanity to determine what the whole is like. The Chief Scientist can decide what they define as a sample for their cruise. 
+- System Template: A template triggers vehicle/dive milestones. These are created and monitored by technicians.
+- Template: A prompt for a certain event that often requests user provided information.
+- Template Categories: A graphical element on the Sealog homepage that groups buttons into userdefined categories.
+
+### Login
 We recommend that each science party member create their own individual login for Sealog. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations. 
 
 ::: {layout-ncol=2}
 ![](./images/image22.png){width=40%}
-
 ![](./images/image19.png){width=40%}
 :::
 
 
+### Templates
+There are two templates within sealog that are used to create events: system templates and event templates. System templates are event configurations that are logged and maintained by the ship’s crew to monitor key milestones during each dive (ex. in water/out of water times, on/off bottom times, video start/stop). These events are admin access only and cannot be edited by the science party. Event templates are cruise specific and can be edited by the science party and are meant to be tailored to meet the science parties’ data logging needs. 
 
+#### Event Template Configuration 
+This section will orient you on how to create Sealog “events.” It is important to note that the primary way of accessing exported data is via a spreadsheet, therefore all “Event Values” and “Event Option” names should be concise. 
 
-## Templates
-System templates are event configurations that are logged and maintained by the ship’s crew to monitor key milestones during each dive (ex. in water/out of water times, on/off bottom times, video start/stop). These events are admin access only and cannot be edited by the science party. Event templates can be edited by the science party and are meant to be tailored to meet the science parties’ data logging needs. 
-
-### Event Template Configuration 
-This section will orient you on how to create Sealog “events.” It is important to note that the primary way of accessing exported data is via a spreadsheet. All “Event Values” and “Event Option” names should be concise. 
-
-#### Adding an Event Template
-- Once logged in, navigate to “System Management” then select “Event Management.”
+##### Adding an Event Template
+- Once logged in, navigate to “System Management” then select “Event Templates.”
     - Please note you need to be logged in as a user, “Guest” does not have event management access. 
 
-![](/images/image21.png)
+  ![](/images/image21.png){width=80%}
 		
-- On the right hand side, the open for “Create Event Template” will allow you to create a new event. 
+- On the right hand side, the “Create Event Template” will allow you to create a new event. 
 
-![](/images/image9.png){width=40%}
+  ![](/images/image9.png){width=30%}
 		
 
-#### Button Name
-Button name is the title of the event. In the example below, the button name is “Video Logging” and is used by the SuBastian team to log when the DVR’s begin recording. 
+##### Button Name
+Button name is the title of the event and the label of the event button on the homescreen of sealog. This is the title of the button your science team will click to trigger the start of an event. 
 
-#### Event Value
-Event values are a way of grouping events. For example, if you have several events that count as sampling (ex. coral collection, niskin sampling, biological sampling, etc.,) they can all be grouped as the event value “Sample.” In the dive summary pdf that gets created at the end of every dive, each Event Value will have its own section, summarizing all of the events under the particular Event Value for that dive. 
+- It is important to note that you may have a number of similar events grouped under a common category (event value). An example of this is if you have biological sample and geological sample under the event value of "sample" an additional static text option must be added to each event to denote whether the sample is "biological" or "geolocial" as the button name does not get included in the data set.
+
+##### Event Value
+Event values are a way of grouping events. For example, if you have several events that count as sampling (ex. geological sampling, niskin sampling, biological sampling, etc.,) they can all be grouped as the event value “Sample.” 
+
+- In the dive summary pdf that gets created at the end of every dive, each Event Value will have its own section, producing a table that summarizes all of the events under the particular Event Value for that dive. 
+- All of the screencaptures taken on the dive will append the event value in their name, allowing for more efficient searching and grouping of photos.
 
 The screenshot below shows an example of events that were labeled with the Event Value “Sample” and the different types denote whether they are biological, niskins, or squeezer samples in this dive.  
 
-#### Template Categories
+##### Template Categories
 Template Categories create different tabs in the home screen to further organize event buttons. In the example below, there are three template categories configured: science, vehicle, video. By default, the “All” category will always show every event button configured. 
 
 ![](/images/temp.png)
 
-Some science parties may want to broaden their own Template Categories beyond the single “Science” that is the default configuration, ex. “Observation, Sample, etc.” The “Vehicle” and “Video” template categories contain important vehicle milestones and should be left unchanged. 
+Some science parties may want to broaden their own Template Categories beyond the single “Science” that is the default configuration, ex. “Observation, Sample, etc.” or even by institution. The “Vehicle” and “Video” template categories contain important vehicle milestones and should be left unchanged. 
 
-#### Free Text Event
-It is also possible to enter “free text events”. These are events that are logged without using  event templates. This could be useful for quick notes, corrections, or if there is not a current event template configured for a certain situation during a dive. 
+##### Free Text Event
+It is also possible to enter “free text events”. These are events that are logged without using a configured event template. This could be useful for quick notes, corrections, or if there is not a current event template configured for a certain situation during a dive. 
 
 ![](/images/freetext.png)
 	
+- Free text events get grouped together as if theyre all events under the same event value. They also get their own table on the dive summary PDF.
 
-#### Configuring Event Options
-At the bottom of the “Create Event Template” the “+ Add Option” selection gives you further options to tailor each event. 
+##### Configuring Event Options
+At the bottom of the “Create Event Template” the “+ Add Option” button gives you further options to tailor each event. Each option includes the name of the event option, a dropdown requiring you to choose which "type" of option you'd like and the text area. 
 
-##### Name
+###### Option Name
 The name of the event option describes the specific option you are creating. For example, in the screenshot below, there are two options configured. The first option, named “Action” allows you to choose to either start or stop the dive stream radio buttons. The second option, named “Platform” allows you to choose checkboxes for the platforms that are being started. 
+
+![](/images/image8.png){width=40%}
 
 - Event options cannot be named “id” or “comment”- these are reserved keywords. 
 - Each option within an event template must have a unique name.
 
-![](/images/image8.png){width=40%}
+###### Option Type
+The type describes different ways of prompting a user for their event information. The option types are described in more detail below.
 
-
-##### Type
-The type describes the choice of action you have for this option. The options are described in more detail below.
-
-- Static Text
+- Option Type: Static Text
 
   Static text options are for when the value is known and should not be altered. This can be used when the act of clicking the event button is all that is needed to log the event. In the example below, the event “Vehicle on Deck” will always have a value of  “On Deck.”
 
   ![](/images/image15.png){width=40%}
 
+  - For multiple events grouped under the same event value, you should add a static text option to denote the event name. For example, if you have three different sample events all under the "Sample" event value, each event should have a static text option that states the type of sampling, ie., biological, geological, water. 
 
-- Text
 
-  The text option is for when the value possibilities for the option are unknown and must be manually filled out when the event is submitted. This could be used when describing file names, writing the species name of an animal observed during a dive, describing a frame grab, and more. 
+- Option Type: Text
+
+  The text option is for when the value possibilities for the option are unknown and must be manually filled out when the event is submitted. This could be used when describing file names, writing the species name of an animal observed during a dive, describing an observation, and more. 
 
   ![](/images/image10.png){width=40%}
 
-- Dropdown
+- Option Type: Dropdown
 
-  The dropdown option is for when the option is one out of a long list of possibilities. In the example below, a dropdown is used to describe all of the octocoral species to aid in a biological observation event. 
+  Dropdown can be used when the option is one out of a long list of possibilities. In the example below, a dropdown is used to describe all of the octocoral species to aid in a biological observation event. 
 
   ![](/images/dropdown.png){width=40%}
 
 
-- Checkboxes
+- Option Type: Checkboxes
 
-  Checkboxes are for when the option is one or more of a list of possibilities. In the example below, this event allows the user to say they’re starting both Facebook and YouTube streams, or just one. 
+  Checkboxes are for when the option is one or more of a list of possibilities. In the example below, this event allows the user to say they’re starting both Facebook and YouTube streams, or only one. 
 
   ![](/images/image23.png){width=40%}
 
+- Option Type: Radio Buttons
 
-- Radio Buttons
-
-  Radio buttons are for when the option is one of a short list of possibilities. In the option below, the radio buttons are used to describe an action of starting or stopping the divestream, while checkboxes are used to choose one or all of the listed platforms.
+  Radio buttons are for when the option is one of a short list of possibilities. In the option below, the radio buttons are used to describe an action of starting or stopping the divestream. In this case, using a radio button is the ideal choice over checkboxes because you want to prevent the user from accidentally selecting "dive stream started" and "dive stream stopped" in a single event.
 
   ![](/images/radio.png){width=40%}
 
 
-- Required Button
+- Options: Required Button
 
-  The required button allows you to choose if an entry is necessary before the event can be created. For example, you may want to have any entry that requires a Sample ID or file name as “required” so this can’t accidentally be reported without key information. 
+  The required button allows you to choose if an entry is necessary before the event can be created. For example, you may want to have any entry that requires a Sample ID or file name as “required” so this can’t accidentally be reported without key information, but something like "observation notes" you may not want to make mandatory.
 
   ![](/images/image7.png){width=40%}
 
 
-- Additional Text
+- Options: Additional Text
 
   Default with every Event Template, an additional text box will be added that can be used to document any extra information.
   
 
-### Saving and Testing Events
+#### Saving and Testing Events
 
 - Click “Create” to save your event to the “Event Templates.”
 - ![](/images/image4.png) Click to edit an Event Template. 
-- ![](/images/image35.png) Click to test an Event Template. This is useful when making new events to make sure all your options are configured how you mean them to be.
-- ![](/images/image26.png)Click to delete an Event Template. Please ask an MT if you need to delete an event template that was not created by your science party. 
+- ![](/images/image35.png) Click to test an Event Template. 
+   - This is useful when making new events to make sure all your options are configured how you mean them to be.
+- ![](/images/image26.png)Click to delete an Event Template.
+    - Please ask an MT if you need to delete an event template that was not created by your science party. 
+
+**Please note:** To edit an event template, you need to click on the blue pencil to be able to have your changes saved. If you make edits without clicking on the edit button, the save option will be grey'd out and you will lose your changes.
 
 ## Samples
 Please follow the following requirements for logging your sample’s on Sealog to ensure they will be properly calculated in Sealog’s post-dive metrics. Please note that in all events that have the word “sample” in the “Event Value” will be used towards the total number of samples.
-For sample events, the “Event Value” should ALWAYS be “SAMPLE” and should be configured with the following options:
+For sample events, the “Event Value” should ALWAYS be “SAMPLE” and should be configured with the following event options:
 
-- Type
+- Sample Type:
 
-  to specify the type of sample collected i.e. “biology, geology, eDNA, Niskin, etc”. This should be configured as a required option. If the desire is to have a dedicated button for a specific sample type then set this option as “static text” with the “value” set to the sample type i.e. “eDNA”. If the event template is for multiple sample types then the “Type” option should have an option type of “dropdown” or “radio buttons”.
+  To specify the type of sample collected i.e. “biology, geology, eDNA, Niskin, etc”. This should be configured as a required option. If the desire is to have a dedicated button for a specific sample type then set this option as “static text” with the “value” set to the sample type i.e. “eDNA”. If the event template is for multiple sample types then the “Type” option should have an option type of “dropdown” or “radio buttons”.
 
 - Sample ID
 
-  to define the sample’s unique identification. This generally will be a “text” option. This should also be configured as a required option.
+  To define the sample’s unique identification. This generally will be a “text” option. This should also be configured as a required option.
 
 - Storage Location
 
-  the unique location on the vehicle where the sample is stored. This should be configured as a required option. This option should have an option type of "dropdown" or "radio buttons." Refer to the list of standard vehicle locations (below)  for how to populate the event option values. If the sample is collected with a science-supplied sampling apparatus then the option value should be a list of unique identifications for the apparatus type. Ensure that the naming convention used for any science-supplied sampling apparatus does not conflict with the standard location names.
+  The unique location on the vehicle where the sample is stored. This should be configured as a required option. This option should have an option type of "dropdown" or "radio buttons." Refer to the list of standard vehicle locations (below)  for how to populate the event option values. If the sample is collected with a science-supplied sampling apparatus then the option value should be a list of unique identifications for the apparatus type. Ensure that the naming convention used for any science-supplied sampling apparatus does not conflict with the standard location names.
 
-: SuBastian Standard Sample Storage Locations
+  : SuBastian Standard Sample Storage Locations
 
-|Full Name| ID|
-|--|--|
-|Bio-Box 1A |BB-1A|
-|Bio-Box 1B |BB-1B|
-|Bio-Box 2A |BB-2A|
-|Bio-Box 2B |BB-2B|
-|Bio-Box 3A |BB-3A|
-|Bio-Box 3B |BB-3B|
-|Bottle 01 |BTL-1|
-|Bottle 02 |BTL-2|
-|Bottle 03 |BTL-3|
-|Bottle 04 |BTL-4|
-|Bottle 05 |BTL-5|
-|Bottle 06 |BTL-6|
-|Quiver 01 |Q-1|
-|Quiver 02 |Q-2|
-|Quiver 03 |Q-3|
-|Quiver 04 |Q-4|
-|Quiver 05 |Q-5|
-|Quiver 06 |Q-6|
-|Quiver 07 |Q-7|
-|Quiver 08 |Q-8|
-|Quiver 09 |Q-9|
-|Quiver 10 |Q-10|
-|Quiver 11 |Q-11|
-|Quiver 12 |Q-12|
-|Quiver 13 |Q-13|
-|Quiver 14 |Q-14|
-|Quiver 15 |Q-15|
-|Quiver 16 |Q-16|
-|Suction 01 |S-1|
-|Suction 02 |S-2|
-|Suction 03 |S-4|
-|Suction 04 |S-4|
-|Suction 05 |S-5|
-|Suction 06 |S-6|
-|Suction 07 |S-7|
-|Suction 08 |S-8|
+  |Full Name| ID|
+  |--|--|
+  |Bio-Box 1A |BB-1A|
+  |Bio-Box 1B |BB-1B|
+  |Bio-Box 2A |BB-2A|
+  |Bio-Box 2B |BB-2B|
+  |Bio-Box 3A |BB-3A|
+  |Bio-Box 3B |BB-3B|
+  |Bottle 01 |BTL-1|
+  |Bottle 02 |BTL-2|
+  |Bottle 03 |BTL-3|
+  |Bottle 04 |BTL-4|
+  |Bottle 05 |BTL-5|
+  |Bottle 06 |BTL-6|
+  |Quiver 01 |Q-1|
+  |Quiver 02 |Q-2|
+  |Quiver 03 |Q-3|
+  |Quiver 04 |Q-4|
+  |Quiver 05 |Q-5|
+  |Quiver 06 |Q-6|
+  |Quiver 07 |Q-7|
+  |Quiver 08 |Q-8|
+  |Quiver 09 |Q-9|
+  |Quiver 10 |Q-10|
+  |Quiver 11 |Q-11|
+  |Quiver 12 |Q-12|
+  |Quiver 13 |Q-13|
+  |Quiver 14 |Q-14|
+  |Quiver 15 |Q-15|
+  |Quiver 16 |Q-16|
+  |Suction 01 |S-1|
+  |Suction 02 |S-2|
+  |Suction 03 |S-4|
+  |Suction 04 |S-4|
+  |Suction 05 |S-5|
+  |Suction 06 |S-6|
+  |Suction 07 |S-7|
+  |Suction 08 |S-8|
 
 
 ## Metadata 
 With each event logged, the following metadata gets grabbed with it:
 
-#### ROV Video Frame Grabs
+### ROV Video Frame Grabs
 
-	High resolution screen capture on all cameras.
+High resolution screen capture of SuBastian's cameras during each event capture as well as automatic captures at a selected frequcy (ASNAP). Generally ASNAP is set to 60s, but the technicians can change this frequency to fit your needs. Sealog ASNAPS can be lowered to 1s intervals by the technicians, but this cannot be supported for extended periods.
 
 - Science Camera (4K camera)
 - Situation Camera (4K camera)
+
+Additionally, if requested, we can record and package the HD Quad and SD Quad along with the main camera video.
+
 - HD Quad
   - Forward HD Cam, looking to Port.
   - Aft HD Cam, looking Aft.
@@ -205,27 +231,29 @@ With each event logged, the following metadata gets grabbed with it:
 
 ![](/images/eventdetails.png)
 	
-#### Vessel Realtime Nav Data
+### Vessel Realtime Nav Data
 - Falkor (too) position and true heading.
+  - This navigational data gets pulled from FKt's primary navigation system. The default is Posmv, but confirm with the technicians for your cruise incase any changes arise. 
+- At a quick glance, this is easily confused with "Vehicle Realtime Nav Data" so make sure you know which one you're working with.
 
 ![](/images/image2.png)
 
 ### Vehicle Realtime Nav Data
-- SuBastian position as calculated by its Sprint Inertial Navigation System, which takes several aiding sensors (Ultra Short BaseLine underwater positioning system, Doppler Velocity Log sensors, depth sensors) along with its own internal inertial sensors and accelerometers and uses an algorithm to output the most accurate position based on weighted sensor inputs. 
-- This is generally the most accurate position for the ROV, but it's important to confirm this with the Marine Technicians during the cruise. 
+- SuBastian position as calculated by its Sprint Inertial Navigation System, which takes several aiding sensors (Ultra Short BaseLine underwater positioning system, Doppler Velocity Log sensors, depth sensors, etc) along with its own internal inertial sensors and accelerometers and uses an algorithm to output the most accurate position based on weighted sensor inputs. 
+- **This is generally the most accurate position for the ROV** but it's important to confirm this with the Marine Technicians during the cruise.
 
 ![](/images/image17.png)
 
 
-#### Vehicle Realtime USBL Data
+### Vehicle Realtime USBL Data
 
 - USBL is a method of underwater navigation that uses a transceiver head lowered under the ship that communicates with a beacon on the ROV,  computing  the range and angle from the transceiver head to the beacon. The software then can determine the position of the beacon on the ROV. 
-- This is a very accurate form of underwater navigation, but is generally not as accurate as the Sprint INS solution. 
+- This is a very accurate form of underwater navigation, and its data gets incorporated in the Sprint calculation, but is generally not as accurate as the Sprint INS solution. Confirm this with the Marine Technicians during your cruise to make sure this is still the case. 
 
 ![](/images/image1.png)
 
 
-#### Vehicle Realtime CTD Data
+### Vehicle Realtime CTD Data
 
 - Data from a SBE49 FastCAT CTD
 - Realtime measured data: 
@@ -239,8 +267,8 @@ With each event logged, the following metadata gets grabbed with it:
 
 ![](/images/image33.png)
 
-#### Vehicle Realtime O2 Data
-Values shown are corrected to account for the effects of salinity and pressure . Raw values are available in separate data files if needed. 
+### Vehicle Realtime O2 Data
+Values shown are corrected to account for the effects of salinity and pressure. Raw values are available in separate data files if needed. 
 
 - Aanderaa Oxygen Optode
   - Concentration: 196.9 umol
@@ -248,7 +276,7 @@ Values shown are corrected to account for the effects of salinity and pressure .
 
 ![](/images/image30.png)	
 
-#### Vehicle Realtime Paro Data
+### Vehicle Realtime Paro Data
 
 - Paroscientific Digiquartz Depth Sensor (m)
 
@@ -257,17 +285,17 @@ Values shown are corrected to account for the effects of salinity and pressure .
 
 
 ## Sealog in Use
-Once event templates are set up for your dive…now it's time to put the templates in action. 
+Once event templates are set up for your dive…it's time to put the templates in action. 
 
 ### Who Can Use Sealog?
 
 - Every dive, SOI has a datalogger on watch, who works to track information specific to the vessel’s need for operation and outreach and to ensure specific vehicle milestones are set up for Sealog’s reporting mechanisms. 
-- It’s up to the science party to provide watchstanders who will log and keep track of scientific data logging needs. Generally at least one (if not all) watchstanders are in charge of adding events as needed during a dive. 
-- Any scientist onboard the ship who wants to contribute to event logging is able to do so. 
+- It’s up to the science party to provide watchstanders who will log and keep track of the science party's specific data logging needs. Generally, at least one (or sometimes more) watchstanders are in charge of adding events as needed during a dive. 
+- Any scientist onboard the ship who wants to contribute to event logging is able to do so, unless the Chief Scienctist would like to limit logging to certain individuals.
 
 ### What Do We Log?
 
-- Crewmembers will log Vehicle Events that are critical to Sealog operation and reporting mechanisms. We also will log certain highlights for our Outreach team. All of our events will be available to scientists in the data exports and reports. 
+- Crewmembers will log Vehicle Events that are critical to Sealog operation and reporting mechanisms. We also will log certain highlights for our Outreach team. We will also occationally log details for the Pilots to reference later, such as problem events. All of our events will be available to scientists in the data exports and reports. 
 - We recommend that Scientists communicate internally about what kinds of events should be logged to best serve your needs. Some examples may be:
   - Wide angle and/or zoom screengrabs of samples prior to sampling.
   - Screengrabs to capture sample storage location.
@@ -278,14 +306,15 @@ Once event templates are set up for your dive…now it's time to put the templat
 
 - Sealog works best when events are logged during an active dive. 
 - Often scientists will assign certain individuals to be incharge of logging in Sealog per watch. 
-- We can also log Sealog after the fact, but the screen grabs and metadata are NOT captured.
+- We can also log Sealog after the fact, but the screen grabs and metadata are **NOT** captured.
 - ASNAP is an automatic screengrab that is run at a designated timed interval during the dive. The default settings have ASNAP running once every 60 seconds, that will take a screengrab of video and metadata, so a reasonable log of the dive will exist with minimal science events logged. 
 
 ### Where Can We Use Sealog?
 
-- Currently, Sealog is only available onboard Falkor (too)’s intranet. 
-- You can log events anywhere on the ship that has internet connectivity. 
-- In the future we hope to provide access to Sealog for scientists ashore. 
+- Sealog is available while onboard Falkor (too)
+  - You can log events anywhere on the ship that has internet connectivity. 
+- Sea Cloud is a cloud based server that provides access to your cruise's Sealog data when you're off the ship. 
+  - **Please Note:** It could take a few months for your cruise's data to be uploaded to the cloud, thank you for your patience. You will be contacted when your data is available.
 
 ### How Should We Use Sealog?
 
@@ -321,24 +350,22 @@ After every dive, a script is run that will summarize the dive, compile all of t
 - Dive Video
   - Science Camera- SCITOO (4K)
   - Situational Camera- SITTOO (4K)
-  - HD Quads
-  - SD Quads
   
    File name: {camera}_{YYYYMMDD}T{HHMMSS}Z.mov
 
-- Images from all of the events, named by camera/date/time of the snapshot. 
+- Snapshots: Images from all of the events, named by camera/date/time of the snapshot. 
 - Dive Summary Report PDF (explained in detail below).
 - Vehicle Summary Report PDF (explained in detail below).
 - Sealog Export (CSV, JSON)
-- All the information from the dive, every event with associated metadata included.
+  - All the information from the dive, every event with associated metadata included.
 - Aux Data Export (JSON)
-- Auxiliary data sensors during the dive such as CTD, O2, High Temp probe, etc.
+  - Auxiliary data sensors during the dive such as CTD, O2, High Temp probe, etc.
 - Event Only Export (CSV, JSON)
-- Export of events and their options and comments.
+  - Export of events and their options and comments.
 - Event Templates (JSON)
-- Sealog configuration file for the dive, grabbing all of the event templates configured.
+  - Sealog configuration file for the dive, grabbing all of the event templates configured.
 - Lowering Record (JSON)
-- Dive number, location, and summary.
+  - Dive number, location, and summary.
 
 
 ## Dive Reports
