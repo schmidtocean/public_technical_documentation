@@ -8,7 +8,7 @@ book:
   output-file: "Schmidt-Ocean-Institute-Technical-Documentation"
   author: "Schmidt Ocean Institute"
   favicon: /images/fcs_soibrand_variation3_fullcolorsoibrand_variation3_fullcolor@10x.png
-  date: "8/29/2023"
+  date: "2024/06/04"
   search: true
   repo-url: https://github.com/schmidtocean/public_technical_documentation/
   repo-actions: [edit, issue, source]
@@ -59,10 +59,11 @@ format:
     css: custom.css
     lightbox: true
     toc-depth: 4
-  # pdf:
-  #   documentclass: scrreport
-  #   toc: true
-  #   colorlinks: true
+  pdf:
+    documentclass: scrreport
+    toc: true
+    toc-depth: 3
+    colorlinks: true
 
     
 
