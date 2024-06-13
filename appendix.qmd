@@ -1,9 +1,39 @@
-# Sensor List
 
-
+# Sensor List for Permitting
+## Meteorological Systems
 ```{ojs}
 //| echo: false
-sensors = FileAttachment("/data/sensorlist_temp.csv").csv({typed: true})
+
+met_sensors = 'https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_sensors.json'
+met = d3.json(met_sensors)
+Inputs.table(met, {
+  columns: [ 
+    "label",
+     "instrument_type",
+    "permit_parameters"
+   ]
+})
+```
+
+## Seawater Systems
+```{ojs}
+//| echo: false
+//| 
+sea_sensors = 'https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_sensors.json'
+sea = d3.json(sea_sensors)
+Inputs.table(sea, {
+  columns: [ 
+    "label",
+     "instrument_type",
+    "permit_parameters"
+   ]
+})
+```
+
+<!-- 
+```{ojs}
+//| echo: false
+sensors = FileAttachment("./data/sensorlist_temp.csv").csv({typed: true})
 viewof search = Inputs.search(sensors)
 Inputs.table(search,{
 format: {
@@ -12,7 +42,7 @@ format: {
   rows: 60
   })
 
-````
+```` -->
 
 # Data Corrections
 
