@@ -2,7 +2,9 @@
 # Sensor Lists
 
 ## Information for Permitting Sensors
-## Meteorological Systems
+( this list may be incomplete, please check with SOI for an official list)
+
+### Meteorological Systems
 ```{ojs}
 //| echo: false
 
@@ -12,17 +14,37 @@ Inputs.table(met, {
   columns: [ 
     "label",
      "instrument_type",
-    "permit_parameters"
-   ]
+    "permit_parameters",
+   ],
+   width:{
+    label: 75,
+    instrument_type: 100,
+    permit_parameters:100
+   },
 })
 ```
 
-## Seawater Systems
+### Seawater Systems
 ```{ojs}
 //| echo: false
 //| 
 sea_sensors = 'https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/seawater_sensors.json'
 sea = d3.json(sea_sensors)
+Inputs.table(sea, {
+  columns: [ 
+    "label",
+     "instrument_type",
+    "permit_parameters"
+   ]
+})
+```
+
+### ROV *SuBastian* Systems
+```{ojs}
+//| echo: false
+//| 
+sub_sensors = 'https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/rov_sensors.json'
+sub = d3.json(sub_sensors)
 Inputs.table(sea, {
   columns: [ 
     "label",
