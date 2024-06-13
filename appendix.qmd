@@ -8,7 +8,7 @@
 ```{ojs}
 //| echo: false
 
-met_sensors = 'https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meterological_sensors.json'
+met_sensors = 'https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/meteorological_sensors.json'
 met = d3.json(met_sensors)
 Inputs.table(met, {
   columns: [ 
@@ -45,7 +45,7 @@ Inputs.table(sea, {
 //| 
 sub_sensors = 'https://raw.githubusercontent.com/schmidtocean/schmidtocean_platform_metadata/main/rov_sensors.json'
 sub = d3.json(sub_sensors)
-Inputs.table(sea, {
+Inputs.table(sub, {
   columns: [ 
     "label",
      "instrument_type",
