@@ -1,5 +1,7 @@
 
-# Sensor List for Permitting
+# Sensor Lists
+
+## Information for Permitting Sensors
 ## Meteorological Systems
 ```{ojs}
 //| echo: false
