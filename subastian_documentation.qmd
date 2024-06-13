@@ -1,0 +1,51 @@
+# SuBastian Systems Overview {.unnumbered}
+
+## General Specifications
+* Maximum depth: 4500 meters
+* Top speed: 3 knots
+* Dimensions: 2.7×2.2×1.8 meters
+* Weight in air: 3200 kilograms
+* Payload capacity: 200 kilograms
+
+## Software System
+* Greensea OPENSEA operating platform
+
+## Standard Science Sensors
+* CTD Sensor – Seabird FastCAT SBE49
+* Secondary CTD Sensor – Valeport uvSVX
+* Oxygen Sensor – Aanderaa 3841 O2 Optode
+* Temperature probe – PT100 up to 600℃
+
+## Camera Systems
+* Situational Video – Insite Pacific Mini Zeus, HD
+* Science Camera – SULIS Subsea Z71, 4K (12X zoom)
+* HD Cameras (4) – DSPL FlexLink HD Multi SeaCam
+
+## Sampling Systems
+* Niskin Bottles
+* Multi-Chamber Suction Sampler
+* Push Core – SOI Custom Build
+* Multichamber Insulated Bioboxes (for fragile animals)
+* Scoops, nets, knives as needed
+
+## Sonar Systems
+* Tritech – Super SeaKing DST
+* Teledyne Marine – Blueview M900
+* Kongsberg M3 Multibeam Sonar
+
+## Core Navigation Systems
+* Inertial Measurement Unit (IMU) – Sonardyne Lodestar
+* Inertial Navigation System (INS) – Sonardyne SPRINT
+* Ultra-Short Baseline (USBL) Transponder – Sonardyne WMT
+* Doppler Velocity Log (DVL) – Sonardyne Syrinx
+
+## Science Interfaces
+* RS-232 ports up to 115 Kbps (8)
+* RS-485 ports up to 115 Kbps (2)
+* Ethernet 10/100 and Gigabit Ethernet
+* 2 available dark fibers for high speed data transfer
+* Power: 12/24 VDC and 230/115 VAC
+* At least four (4) hydraulic rate valve pack channels
+* At least two (2) hydraulic servo valve pack channels
+* At least six (6) proportional or rate hydraulic valve circuits, with adjustable pressure to 1000 psi (69bar)
+* At least two (2) Proportional hydraulic valve circuits (thruster valves), max pressure to 3000 psi (207bar)

@@ -39,6 +39,9 @@ book:
     # - sealog.qmd
     # - sealog_falkortoo.qmd
     # - sealog_subastian.qmd
+    - part: subastian_documentation.qmd
+      chapters:
+        - subastian_instruments.qmd
     
   
   appendices:
