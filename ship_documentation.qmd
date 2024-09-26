@@ -1,13 +1,33 @@
 # Ship Systems Overview {.unnumbered}
 
 ## Gondola Science System
+
+### Technical
+
 ![](./images/tech_gondola.png)
+
+### Outreach
+
+![](images/Fkt Refit - Gondola Outreach.jpg)
+
+## Scientific Antenna Plan
+
+![](images/Fkt Refit - Antenna Outreach Final.jpg)
 
 ## Meteorological Systems
 
-![](./images/foremast_met_sensors.png)
+### Foremast
+
+![](images/Fkt%20Met%20Sensor%20Locations%20(4)-2.jpg)
+
+### Main Mast
+
+![](images/Fkt%20Met%20Sensor%20Locations%20(3).jpg)
 
 ## Seawater System
 
-## Lab 
+Coming Soon!
 
+## Lab
+
+Coming Soon!

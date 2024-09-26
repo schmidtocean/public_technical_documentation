@@ -1,3 +1,5 @@
 # Introduction
 
-This will be a book that contains chapters on accessing data systems while onboard R/V Falkor (too)
+![](images/FKt230115-Falkortoo_Aerial-DepartingVigo-20230115-Ingle-0023-2.jpg){width="443"}
+
+This book contains chapters on accessing data systems and understanding our science systems while onboard *R/V Falkor (too).* Our hope is that these documents will help during the cruise planning process, while onboard, and in the post cruise period.

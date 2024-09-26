@@ -1,13 +1,56 @@
 # Science Party Orientation {.unnumbered}
 
-## Mission Control Ettiquette
+## Communication Onboard
 
-## Streaming Ettiquette
+### Daily Meeting
 
-## Email Communication overview
+Every morning, a daily meeting on the bridge is held at 0730 by the heads of departments to discuss the ship activities for that day. We ask that the chief scientist, or a representative, is present for this so that the ship can plan their activities in a way that best supports the science. This is also an opportunity to give feedback to the departments routinely throughout the cruise.
+
+### Shipboard Daily Plan
+
+During mobilization, the Marine Technicians will create and share with you a daily plan document. Here, you can fill in your estimated operations for the day, which we will distribute around the ship. This is really helpful for our ships crew so they can plan out the day's operations and how to be best available to support the operations. This can also be distributed into the labs if you need to get schedules out to the rest of the science party.
+
+### Email
+
+**diveplans\@falkortoo.org** is for distribution of ROV related planning for upcoming dives, and goes to many email addresses on board and to our shoreside support.
+
+**mt\@falkortoo.org** for any information you need to send to the MT's. If you have a mapping plan, CTD sites, or other sites we will create an ECDIS file to send to the bridge.
+
+**bridge\@falkortoo.org** will go to all the bridge officers if you need to send them information or waypoints, etc. If you have several waypoints to send, please include the MT's and we will create an ECDIS file for the bridge to eliminate any error associated with entering the waypoints by hand.
 
 ## Templates
 
-### Mapping
+For each dive and mapping survey, we ask that you prepare a plan that will convey the information below at a minimum, which is needed by the ship's crew to ensure the plan can be effectively carried out.
 
 ### Dive
+
+#### Dive Information
+
+-   SuBastian Dive Number
+-   Estimated time of Deployment and Recovery
+-   Estimated length of dive
+-   ROV Launch Location (lat, long)
+-   Dive waypoints (preferably with estimated depth)- we will then upload these into Greensea for the pilots to work off of during the dive. If you have an excel file with the waypoints, feel free to include those as it will make various conversions between different programs easier, but we can work with whatever you provide!
+-   Dive Description: this description gets logged into our Sealog description of the dive and will become a part of the dive summary PDF made for each dive.
+-   Porch configuration (if it changes from dive to dive). **This information should be sent to 'diveplans\@falkortoo.org' prior to every dive.**
+
+#### Dive Template
+
+<p><a href="assets/DivePlanTemplateInfo.pdf" download>Dive Plan Template Info</a></p>
+
+<p><a href="assets/DivePlanTemplate.docx" download>Dive Plan Template</a></p>
+
+### Mapping
+
+#### Mapping Information
+
+-   Survey Information: speed, sonar, start / end time.
+-   Description of Survey
+-   Survey Procedures
+-   Waypoints **This information should be sent to 'mt\@falkortoo.org' prior to the mapping survey.**
+
+#### Mapping Template
+
+<p><a href="assets/MappingPlanTemplateInfo.pdf" download>Mapping Plan Template Info</a></p>
+
+<p><a href="assets/MappingPlanTemplate.docx" download>Mapping Plan Template</a></p>

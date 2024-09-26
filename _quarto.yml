@@ -27,6 +27,7 @@ book:
       - science_party_orientation.qmd
       - lab_orientation.qmd
       - science_overview.qmd
+      - mapping_guide.qmd
     - part: Data
       chapters:
       - data_pipeline.qmd
