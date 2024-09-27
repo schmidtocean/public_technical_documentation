@@ -1,14 +1,14 @@
 # Data Pipeline {.unnumbered}
 
-Data, files, and information are collected from sensors and computer systems and then written and/or moved to a central location. Depending on the individual system, and how data is captured, the route the data takes as well as the structure of file containing the information differs. An overview of this system is described here.
+Data, files, and information are collected from sensors and computer systems and then written and/or moved to a central location. Depending on the individual system, and how data is captured, the route the data takes, as well as the structure of file containing the information differs. An overview of this system is described here.
 
-NOTE: On the ship you can easily access some of the data described below through : <http://10.23.9.25/>
+**Note:** On the ship you can easily access some of the data described below through : <http://10.23.9.25/>
 
 ## Ship Overview
 
 ### Data Flow
 
-![](images/Final%20Data%20Flow.png)
+![](images/final_data_flow.png)
 
 ### OpenRVDAS
 
@@ -36,9 +36,11 @@ Dashboarding software used to allow real-time data viewing on R/V *Falkor (too)*
 
 -   Grafana is a web based application that allows the science party to graphically view real time data in convenient and configurable pages. All of the sensors that log data through openRVDAS and InfluxDB are able to be visualized by Grafana. Scientists can submit requests for Grafana graphs during the cruise planning meetings or during the cruise. Grafana is able to be integrated into our EVERTZ video matrix system, allowing it to be displayed throughout the entire ship.
 
+[Learn more about Grafana](dashboards.qmd)
+
 ### Data Products
 
-For a detailed walkthrough of the CruiseData produced for every cruise, see the [Data Directory](data_directory.qmd)
+For a detailed walkthrough of the CruiseData produced for every cruise, see the [Data Directory](data_directory.qmd).
 
 ## Shore Overview
 
@@ -50,8 +52,27 @@ SOI's Cloud system acts as a data archive as well as a way to route data to a va
 
 ## Public Access
 
-Open data sharing is a core principle for SOI and part of our strategic framework for the next 10 years.
+Schmidt Ocean Institute supports open sharing of information about the ocean to stimulate the growth of its applications and user community, and amplify further exploration, discovery, and deeper understanding of our environment. These efforts are supported through partnerships with data management experts in the oceanographic community to enable standards­ compliant sharing of scientific information and data collected during research cruises. Open data sharing is a core principle for SOI and part of our strategic framework for the next 10 years. We work with our science parties to ensure that within a certain period of time, all data collected is available publically. 
 
 ## Public Repositories
 
 Data gets uploaded to several partners including R2R, Google Cloud and others.
+
+### R2R
+- Environmental sensor data routinely collected using embedded instrument systems on *R/V Falkor (too)* during research cruises and transits are made available to the general public via Schmidt Ocean Institute’s partnership with [Rolling Deck to Repository (R2R)](https://www.rvdata.us/). The datatypes curated by R2R can be found [here](https://www.rvdata.us/data), and are listed below:
+
+    - Acoustic Doppler Current Profiler measurements (ocean currents)
+    - Conductivity, Temperature, Pressure and other sensors of the water column
+    - Echosounder (depth to seafloor or midwater reflections, shallow sediment profiles, water column images)
+    - Expendable Probes (XBT, XCTD, XSV, XCP) launched from deck
+    - Fluorometer (fluorescence)
+    - Gravimeter (gravity field)
+    - Magnetometer (magnetic field)
+    - Meteorological Data (wind speed/direction, temperature, humidity, turbulence, precipitation, radiation)
+    - Multibeam (unprocessed, swath bathymetry, amplitude, backscatter, water column image)
+    - Navigation Data (time, position, Global Navigation Satellite System, Vertical Reference Unit, Speed Log,Gyrocompas)
+    - Sea surface sound velocimeter (SSV)
+    - Thermosalinograph (TSG – flow­through temperature and salinity)
+    - Winch (wire tension, speed, payout)
+
+[R/V *Falkor (too)* R2R Data](https://www.rvdata.us/search/vessel/Falkor%20(too))
