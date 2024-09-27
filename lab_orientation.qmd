@@ -60,13 +60,15 @@ To be updated soon! :)
 
 ## Computer Lab
 
+![](images/computerlab.jpeg){width="619"}
+
 The Computer Lab is the central hub for the rest of the labs. In general, the Chief Scientist sets up their workstation here, with easy access to the MT Office, ROV Office, Main Lab, and Mission Control Room. The Computer Lab has several screens, which monitor appropriate feeds according to the current activity.
 
 ### Work Space
 
 Workspace is limited, but we ask that two stations are reserved according to the photo below:
 
-![](images/Screenshot%202024-09-26%20105050.png)
+![](images/computerlab_workspace.png)
 
 In addition, depending on the operation currently being held, we may have to move computers or people that are sitting along the workstations on the aft bulkhead, in front of the large screens.
 
@@ -113,7 +115,7 @@ When our Mission Control room on *Falkor (too)* was being designed, careful cons
 
 The front of the room is reserved for watchstanders and operators, with the science watch lead all the way to the left, the pilot and copilot in the middle and the MMT on the right. Behind the science watch lead is reserved for the science data logger and behind the MMT is reserved for an MT. The other seats in the room are open to other science party members.
 
-![](images/missioncontrol-3.png){width="467"}
+![](images/missioncontrol_layout.png){width="467"}
 
 ### Mission Control Rules
 
