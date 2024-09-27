@@ -4,7 +4,7 @@
 
 This book details information on the Research Vessel *Falkor (too)*, intended to aid science parties before, during, and post cruise.
 
-![](images/Falkor-too-spec-grey-2048x672.jpg)
+![](images/Falkor-too-spec-grey.jpg)
 
 ## Ship Specifications
 
