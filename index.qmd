@@ -29,7 +29,7 @@ This book details information on the Research Vessel *Falkor (too)*, intended to
 | **Year Built / Year Converted**   | 2011 / 2022                                   |
 
 : R/V *Falkor (too)* General Specifications
-<p><a href="assets/FKt_general_arrangement.pdf" download>Download the full General Arrangement for Falkor (too)</a></p>
+<p><a href="./assets/FKt_general_arrangement.pdf" download>Download the full General Arrangement for Falkor (too)</a></p>
 
 For more information about available systems on board see [R/V *Falkor (too)* specifications](https://schmidtocean.org/falkortoo_specifications/). 
 
