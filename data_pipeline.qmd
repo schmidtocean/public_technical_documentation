@@ -8,7 +8,7 @@ Data, files, and information are collected from sensors and computer systems and
 
 ### Data Flow
 
-![](images/final_data_flow.png)
+![](/docs/images/final_data_flow.png)
 
 ### OpenRVDAS
 
