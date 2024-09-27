@@ -32,7 +32,7 @@ Sealog is accessible via [10.23.11.25/sealog-fkt/](http://10.23.11.25/sealog-fkt
 
 -   We recommend that any science party member who will be logging events within Sealog-FKt creates their own individual login. Sealog-FKt and Sealog-Sub require you to create a login for each system, but they can be the same login info. With each event entry, along with the scientific metadata, the system will keep track of the user that submitted the entry. There is also a guest login that has access to creating events, but has restricted access to event template configurations.
 
-    ![](./images/sealogfktlogin.png){width="60%"}
+    ![](./images/sealogfkt_login.png){width="60%"}
 
 ### Templates
 
@@ -46,13 +46,13 @@ This section will orient you on how to create Sealog “events.” It is importa
 
 -   Once logged in, navigate to “System Management” then select “Event Templates.”
 
-    ![](images/Screenshot%202024-09-18%20113917-3.png){width="348"}
+    ![](images/sealogfkt_event_template_button.png){width="348"}
 
 -   Please note you need to be logged in as a user. The “Guest” account does not have event management access.
 
 -   On the right hand side, the “Create Event Template” will allow you to create a new event.
 
-    ![](images/Screenshot%202024-09-18%20114137-2.png){width="347"}
+    ![](images/sealogfkt_createeventtemplate.png){width="347"}
 
 ##### Button Name
 
@@ -76,15 +76,15 @@ It is also possible to enter “free text events”. These are events that are l
 
 ##### Configuring Event Options
 
-At the bottom of the “Create Event Template” the ![](images/Screenshot%202024-09-18%20114618-2.png){width="75"} button gives you further options to tailor each event. Each option includes the name of the event option, a drop down requiring you to choose which "type" of option you'd like and the text area.
+At the bottom of the “Create Event Template” the ![](images/sealogfkt_add_option.png){width="75"} button gives you further options to tailor each event. Each option includes the name of the event option, a drop down requiring you to choose which "type" of option you'd like and the text area.
 
-![](images/Screenshot%202024-09-18%20114715-2.png){width="351"}
+![](images/sealogfkt_new_option.png){width="351"}
 
 ###### Option Name
 
 The name of the event option describes the specific option you are creating. It prompts the user for what information they are supposed to be entering. In the example below, the Cruise Event prompts a user to update the "cruise status," where "Status" is the option name.
 
-![](images/Screenshot%202024-09-18%20114858-2.png){width="343"}
+![](images/sealogfkt_option_name.png){width="343"}
 
 -   Event options cannot be named “id” or “comment”- these are reserved keywords.
 -   Each option within an event template must have a unique name.
@@ -99,51 +99,51 @@ The type describes different ways of prompting a user for their event informatio
 
     -   For multiple events grouped under the same event value, you should add a static text option to denote the event name. For example, if you have three different observation events all under the "Observation" event value, each event should have a static text option that states the type of observations, ie., debris, mammal, fish.
 
-    ![](images/Screenshot%202024-09-18%20120706-2.png){width="348"}
+    ![](images/sealogfkt_option_statictext.png){width="348"}
 
     Option Type: Text
 
     The text option is for when the value possibilities for the option are unknown and must be manually filled out when the event is submitted. This could be used when describing file names, writing the species name of an animal observed during a cruise, describing an observation, and more. In the example below, ID is a text option that allows the user to enter an ID specific to this bird stranding.
 
-    ![](images/Screenshot%202024-09-18%20123143-2.png){width="350"}
+    ![](images/sealogfkt_option_text.png){width="350"}
 
 -   Option Type: Dropdown
 
     Dropdown can be used when the option is one out of a long list of possibilities. For example, you may use a drop down to list possible bird species in the area as part of a bird observation event.
 
-    ![](images/Screenshot%202024-09-18%20120421-4.png){width="353"}
+    ![](images/sealogfkt_option_dropdown.png){width="353"}
 
 -   Option Type: Checkboxes
 
     Checkboxes are for when the option is one or more of a list of possibilities. For example, you could check the instruments installed on a lander for a certain deployment, which could include one or more sensors.
 
-    ![](images/Screenshot%202024-09-18%20123612-3.png){width="348"}
+    ![](images/sealogfkt_option_checkbox.png){width="348"}
 
 -   Option Type: Radio Buttons
 
     Radio buttons are for when the option is one of a short list of possibilities. For example, with a lander deployment and recovery, you couldn't do once simultaneously, so a radio button would be preferred when determining if an instrument is deployed or recovered.
 
-    ![](images/Screenshot%202024-09-18%20123612-4.png){width="347"}
+    ![](images/sealogfkt_option_radiobutton.png){width="347"}
 
 -   Options: Required Button
 
     The required button allows you to choose if an entry is necessary before the event can be created. For example, you may want to have any entry that requires a Sample ID or file name as “required” so this can’t accidentally be reported without key information, but something like "observation notes" you may not want to make mandatory.
 
-    ![](images/Screenshot%202024-09-18%20114715-3.png){width="346"}
+    ![](images/sealogfkt_option_required.png){width="346"}
 
 -   Options: Additional Text
 
     Default with every Event Template, an additional text box will be added that can be used to document any extra information.
 
-    ![](images/Screenshot%202024-09-18%20123757-2.png){width="351"}
+    ![](images/sealogfkt_option_additionaltext.png){width="351"}
 
 #### Saving and Testing Events
 
 -   Click “Create” to save your event to the “Event Templates.”
-    -   ![](images/Screenshot%202024-09-25%20144402.png){width="22" height="21"} Click to edit an Event Template.
-    -   ![](images/Screenshot%202024-09-25%20144413.png){width="22" height="18"} Click to test an Event Template.
+    -   ![](images/sealogfkt_option_template_edit.png){width="22" height="21"} Click to edit an Event Template.
+    -   ![](images/sealogfkt_option_template_test.png){width="22" height="18"} Click to test an Event Template.
         -   This is useful when making new events to make sure all your options are configured how you mean them to be.
-    -   ![](images/Screenshot%202024-09-25%20144422.png){width="21" height="18"} Click to delete an Event Template.
+    -   ![](images/sealogfkt_option_template_delete.png){width="21" height="18"} Click to delete an Event Template.
         -   Please ask an MT if you need to delete an event template that was not created by your science party.
 
 **Please note:** To edit an event template, you need to click on the blue pencil to be able to have your changes saved. If you make edits without clicking on the edit button, the save option will be grey'd out and you will lose your changes.
@@ -192,7 +192,7 @@ When an event gets triggered, Sealog-Fkt pulls current values from InfluxDB of c
 -   Vessel Acoustics
 -   Depth of any actively pinging echosounder (m)
 
-![](images/Screenshot%202024-09-18%20130818-2.png){width="579"}
+![](images/sealogfkt_auxdata.png){width="579"}
 
 ## Outputs
 
@@ -237,7 +237,7 @@ An Expedition Report is created by our Data Team at the end of every cruise and 
 
 The report starts by giving an introduction to the cruise.
 
-![](images/Screenshot%202024-09-19%20092136-2.png){width="409"}
+![](images/expeditionreport_intro.png){width="409"}
 
 Then a description of the cruise background and objectives.
 
@@ -245,36 +245,36 @@ Then a description of the cruise background and objectives.
 
 An overview of the cruise products is next, with links on where publicly available data can be found post cruise.
 
-![](images/Screenshot%202024-09-19%20094807-2.png){width="419"}
+![](images/expeditionreport_overview.png){width="419"}
 
 Maps of the study area and cruise track give location perspective to the cruise.
 
-![](images/Screenshot%202024-09-19%20095006-2.png){width="426"}
+![](images/expeditionreport_expeditionlocation.png){width="426"}
 
 #### Underway Systems
 
 Next, a summary of the data received from our underway systems including Weather Data
 
-![](images/Screenshot%202024-09-19%20095348-2.png){width="466"}
+![](images/expeditionreport_weather_table.png){width="466"}
 
-![Wind Speed and Direction](images/Screenshot%202024-09-19%20095402-2.png){width="466"}
+![Wind Speed and Direction](images/expeditionreport_weather_graph.png){width="466"}
 
 and Seawater Data
 
-![](images/Screenshot%202024-09-19%20095414-4.png){width="465"}
+![](images/expeditionreport_seawater_table.png){width="465"}
 
-![Sea Surface Temperature and Salinity](images/Screenshot%202024-09-19%20095426-3.png){width="464"}
+![Sea Surface Temperature and Salinity](images/expeditionreport_seawater_graph.png){width="464"}
 
 #### Event Summary
 
 All of the Sealog events are grouped by event value and quantities are described in this section.
 
-![](images/Screenshot%202024-09-19%20095948-2.png){width="404"}
+![](images/expeditionreport_event_table.png){width="404"}
 
-![](images/Screenshot%202024-09-19%20101751-2.png){width="166"}
+![](images/expeditionreport_eventvalue_table.png){width="166"}
 
 Some key event values, like CTD's, Equipment, Sonar and ROV have their own tables that gives more detail on some of the main scientific equipment on the cruise.
 
-![](images/Screenshot%202024-09-19%20103744-2.png){width="454"}
+![](images/expeditionreport_eventvalue_table_rov.png){width="454"}
 
 :::
