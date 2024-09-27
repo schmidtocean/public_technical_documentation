@@ -23,11 +23,11 @@ book:
     - index.qmd
     - part: Science Onboard
       chapters:
-      - ship_documentation.qmd
       - science_party_orientation.qmd
       - lab_orientation.qmd
-    #  - science_overview.qmd
       - mapping_guide.qmd
+      - ship_documentation.qmd
+    #  - science_overview.qmd
     - part: Data
       chapters:
       - data_pipeline.qmd
