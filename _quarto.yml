@@ -26,7 +26,7 @@ book:
       - ship_documentation.qmd
       - science_party_orientation.qmd
       - lab_orientation.qmd
-      - science_overview.qmd
+    #  - science_overview.qmd
       - mapping_guide.qmd
     - part: Data
       chapters:
