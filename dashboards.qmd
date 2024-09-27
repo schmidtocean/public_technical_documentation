@@ -6,11 +6,11 @@ While aboard *R/V Falkor (too)* real-time data is viewable via a variety of [gra
 
 -   For an overview of real-time data related to the [*Falkor (too)*](http://10.23.9.24/d/oaTjHQK4z/expedition-overview?orgId=1)
 
-![Falkor (too) Expedition Overview Dashboard](images/Screenshot%202024-09-25%20085746.png){fig-align="left" width="444"}
+![Falkor (too) Expedition Overview Dashboard](./images/expedition_overview_dashboard.png){fig-align="left" width="444"}
 
 -   For an overview of real-time data from [*ROV SuBastian*](http://10.23.9.24/d/fcvJZ9A4k/subastian-overview?orgId=1&refresh=10s)
 
-![ROV SuBastian Dive Overview Dashboard](images/Screenshot%202024-09-25%20091646.png){fig-align="left" width="443"}
+![ROV SuBastian Dive Overview Dashboard](images/subastian_overview_dashboard.png){fig-align="left" width="443"}
 
 ## Dashboards of interest
 
@@ -37,15 +37,15 @@ It is possible to have a dashboard created specific to your cruise. This is best
 
 ## Navigate Between Dashboards
 
--   The top left corner shows what dashboard you are currently in. To return to the dashboards, click on the "Dashboards" link. ![](images/Screenshot%202024-09-25%20094556.png)
+-   The top left corner shows what dashboard you are currently in. To return to the dashboards, click on the "Dashboards" link. ![](images/home_dashboards.png)
 -   You will be taken to a list of all the dashboards in alphabetical order.
     -   SuBastian dashboards are in the "SuBastian" folder.
 
-        ![](images/Screenshot%202024-09-25%20094655.png){width="212"}
+        ![](images/subastian_dashboard_list.png){width="212"}
 
     -   Falkor (too) dashboards are listed as stand alone.
 
-        ![](images/Screenshot%202024-09-25%20094625.png){width="208"}
+        ![](images/falkortoo_dashboard_list.png){width="208"}
 -   Click on your desired dashboard and explore all of the graphs.
 
 ## Changing Time Span and Data Density of Dashboards
@@ -54,17 +54,17 @@ It is possible to have a dashboard created specific to your cruise. This is best
 
 -   When you first enter a dashboard, the default time range is usually an hour. In the top right corner, you can see what timeframe your dashboard is set for.
 
-    ![](images/Screenshot%202024-09-25%20095229.png){width="186"}
+    ![](images/dashboard_timerange.png){width="186"}
 
 -   If you click the dropdown, you are shown quick ranges which range from present time to the past.
 
-    ![](images/Screenshot%202024-09-25%20095245.png){width="142"}
+    ![](images/dashboard_quickranges.png){width="142"}
 
 ### Truncated Graphs
 
 -   You may find if you set the time range too high, an error will appear in the top left hand corner and some of the data will not graph. If this happens, you should shorten the time range or adjust the data density.
 
-    ![](images/Screenshot%202024-09-25%20105414.png)
+    ![](images/dashboard_truncated.png)
 
 ### Adjusting the Graphed Data Density
 
@@ -72,30 +72,30 @@ It is possible to have a dashboard created specific to your cruise. This is best
 
 -   If this is available, it will be in the top left side of the dashboard.
 
-    ![](images/Screenshot%202024-09-25%20111133.png){width="138"}
+    ![](images/dashboard_resolution.png){width="138"}
 
 ### Absolute Time Ranges
 
 -   You can also manually set the range of time. To the left of the quick ranges, is a space for you to set the absolute time range.
 
-    ![](images/Screenshot%202024-09-25%20095259.png){width="224"}
+    ![](images/dashboard_absolute_time_range.png){width="224"}
 
 -   By clicking on the calendar icon, you can choose the desired date.
 
-    ![](images/Screenshot%202024-09-25%20095315.png){width="433"}
+    ![](images/dashboard_select_time_range.png){width="433"}
 
 -   Double click on the desired date and it will automatically be filled into the time range on the right. Generally, this will start your time at 0000 on your desired date and end at 23:59:59.
 
-    ![](images/Screenshot%202024-09-25%20095331-2.png){width="431"}
+    ![](images/dashboard_select_time_range_chosen.png){width="431"}
 
 -   24 hrs is generally too large of a time range to properly graph in Grafana, so we suggest a time range of 6-12 hrs. Adjust the either the "from" or the "to" range to shorten the length.
 
-    ![](images/Screenshot%202024-09-25%20095400.png){width="237"}
+    ![](images/dashboard_select_time_range_trimmed.png){width="237"}
 
 -   Click apply time range and the dashboard should load the new dataset.
 
-    ![](images/Screenshot%202024-09-25%20095421-2.png){width="579"}
+    ![](images/dashboard_custom_timerange.png){width="579"}
 
 -   Once an absolute time range is chosen, you can use the left and right arrows beside the time range to jump forward and backward in time your set time range. We find this is the most useful way to look for trends or certain events without knowing the exact timing.
 
-    ![](images/Screenshot%202024-09-25%20095445.png){width="462" height="40"}
+    ![](images/dashboard_custom_time_arrows.png){width="462" height="40"}
