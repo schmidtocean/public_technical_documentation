@@ -2,7 +2,7 @@
 
 ## Overview
 
-While aboard *R/V Falkor (too)* real-time data is viewable via a variety of [grafana dashboards](http://10.23.9.24/?orgId=1).
+While aboard *R/V Falkor (too)* real-time data is viewable via a variety of [grafana dashboards](http://10.23.9.24/dashboards).
 
 -   For an overview of real-time data related to the [*Falkor (too)*](http://10.23.9.24/d/oaTjHQK4z/expedition-overview?orgId=1)
 
@@ -15,11 +15,12 @@ While aboard *R/V Falkor (too)* real-time data is viewable via a variety of [gra
 ## Dashboards of interest
 
 -   [*Falkor (too)* Expedition Overview](http://10.23.9.24/d/oaTjHQK4z/expedition-overview?orgId=1)
+-   [*Falkor (too)* Navigation](http://10.23.9.24/d/eqFYOwK4k/falkor-nav?orgId=1&refresh=5s)
+-   [*Falkor (too)* Meteorlogical Sensors](http://10.23.9.24/d/g9f-EFRVk/falkor-weather?orgId=1&refresh=5s)
+-   [*Falkor (too)* Underway Seawater Sensors](http://10.23.9.24/d/WNYWkQ2Vz/falkor-seawater?orgId=1&refresh=5s)
 -   [*ROV SuBastian* Dive Overview](http://10.23.9.24/d/fcvJZ9A4k/subastian-overview?orgId=1&refresh=10s)
--   [Meteorlogical Sensors](http://10.23.9.24/d/g9f-EFRVk/falkor-weather?orgId=1&refresh=5s)
--   [Underway Seatwer Sensors](http://10.23.9.24/d/g9f-EFRVk/falkor-weather?orgId=1&refresh=5s)
 -   [USBL](http://10.23.9.24/d/8B6U3t_Vk/usbl-overview?orgId=1)
--   [R/V *Falkor (too)* Navigation](http://10.23.9.24/d/eqFYOwK4k/falkor-nav?orgId=1&refresh=5s)
+
 
 ## Cruise Specific Dashboards
 
