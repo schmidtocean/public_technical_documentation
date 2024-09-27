@@ -18,7 +18,7 @@ Mapping serves as the backbone of all of our research and is one of SOI’s key 
 -   FKt Typical Operational Range: 1000m - 6,000m
 -   Swath Width: up to 6 times the depth
 
-![](images/Screenshot%202024-09-05%20092903.png){width="351"}
+![](images/mappingguide_gondola_em124.png){width="351"}
 
 ### EM712
 
@@ -28,7 +28,7 @@ Mapping serves as the backbone of all of our research and is one of SOI’s key 
 -   FKt Typical Operational Range: 50m - 1,000m
 -   Swath Width: up to 5.5 times the depth
 
-![](images/Screenshot%202024-09-05%20092954.png){width="347"}
+![](images/mappingguide_gondola_em712.png){width="347"}
 
 ### EM2040
 
@@ -37,7 +37,7 @@ Mapping serves as the backbone of all of our research and is one of SOI’s key 
 -   Depth Range: \<1m - 635m
 -   FKt Typical Operational Range: 40m- 100m
 
-![](images/Screenshot%202024-09-05%20093037.png){width="350"}
+![](images/mappingguide_gondola_em2040.png){width="350"}
 
 ### Which Multibeam Should I Use?
 
@@ -119,7 +119,7 @@ The following steps can be taken to minimize the effect of weather on the echoso
 
 Multibeam coverage is dependent on the echosounder used, depth of the seabed, angular coverage and environmental conditions. Generally shallow topography= less coverage and higher resolution, deeper topography= more coverage and less resolution.
 
-[![Image: Norbit](images/Screenshot%202024-09-05%20093230.png)](https://norbit.com/subsea/products/#interactive-product-selector)
+[![Image: Norbit](images/mappingguide_norbit.png)](https://norbit.com/subsea/products/#interactive-product-selector)
 
 ### Swath Width
 
@@ -135,13 +135,13 @@ The marine technicians on Falkor (too) work closely with the bridge officers to 
 
 ### Swath Width and Line Spacing Table
 
-![](images/Screenshot%202024-09-05%20100821.png){width="784"}
+![](images/mappingguide_swath_width_table.png){width="784"}
 
 ## Multibeam Resolution
 
 The resolution of the multibeam data can be described by the sounding density along track and across track.
 
-[![Image: Hydro International](images/350b6e0558d53708ef6b33c78d84d2614625037e%20(1).png)](https://www.hydro-international.com/content/article/state-of-the-art-in-multibeam-echosounders)
+[![Image: Hydro International](images/mappingguide_multibeam_physics.png)](https://www.hydro-international.com/content/article/state-of-the-art-in-multibeam-echosounders)
 
 Resolution is dependent on several factors:
 
@@ -175,7 +175,7 @@ It’s important to note that resolution does not directly equate to object dete
 
 ### Multibeam Resolution Table
 
-![Data based on EM Calculator with adjustments from MT Technicians.](images/Screenshot%202024-09-05%20103217.png)
+![Data based on EM Calculator with adjustments from MT Technicians.](images/mappingguide_mb_resolution_table.png)
 
 ## Object Detection
 
@@ -207,15 +207,15 @@ The tables below are calculated w/ Kongsberg’s EM Calculator and indicate the 
 
 #### EM2040 Chart for Target Detection
 
-![Based on survey settings: 6 knot speed, 120 degree swath width, and dual swath mode. Calculations based on Kongsberg’s EM Calculator.](images/Screenshot%202024-09-05%20104249-2.png){width="659"}
+![Based on survey settings: 6 knot speed, 120 degree swath width, and dual swath mode. Calculations based on Kongsberg’s EM Calculator.](images/mappingguide_target_detection_em2040.png){width="659"}
 
 #### EM712 Chart for Target Detection
 
-![Based on survey settings: 6 knot speed, 120 degree swath width, and dual swath mode. Calculations based on Kongsberg’s EM Calculator.](images/Screenshot%202024-09-05%20104526-3.png){width="658"}
+![Based on survey settings: 6 knot speed, 120 degree swath width, and dual swath mode. Calculations based on Kongsberg’s EM Calculator.](images/mappingguide_target_detection_em712.png){width="658"}
 
 #### EM124 Chart for Target Detection
 
-![Based on survey settings: 6 knot speed, 120 degree swath width, and dual swath mode. Calculations based on Kongsberg’s EM Calculator.](images/Screenshot%202024-09-05%20115142.png)
+![Based on survey settings: 6 knot speed, 120 degree swath width, and dual swath mode. Calculations based on Kongsberg’s EM Calculator.](images/mappingguide_target_detection_em124.png)
 
 ## Falkor (too) Mapping Principles
 
@@ -231,19 +231,19 @@ With a detailed and well thought out mapping plan, the marine technicians will b
 
 ### Gondola Technical Drawing
 
-![](images/Fkt%20Refit%20-%20Gondola%20Technical.png)
+![](images/gondola_technical.png)
 
 ### Gondola Outreach Drawing
 
-![](images/Fkt%20Refit%20-%20Gondola%20Outreach.png)
+![](images/gondola_outreach.png)
 
 ### Antenna Plan
 
-![](images/Fkt%20Refit%20-%20Antenna%20Outreach%20Final.png)
+![](images/antenna_outreach.png)
 
 ### Swath Extinction + Tables
 
-![](images/Multibeam%20performance%20info.png)
+![](images/multibeam_preformance_info.png)
 
 ### Mapping Plan Template Info
 
