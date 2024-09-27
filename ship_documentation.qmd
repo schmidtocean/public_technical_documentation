@@ -4,25 +4,25 @@
 
 ### Technical
 
-![](./images/tech_gondola.png)
+![](./images/shipdocs_gondola_tech.png)
 
 ### Outreach
 
-![](images/Fkt Refit - Gondola Outreach.jpg)
+![](images/shipdocs_gondola_outreach.jpg)
 
 ## Scientific Antenna Plan
 
-![](images/Fkt Refit - Antenna Outreach Final.jpg)
+![](images/shipdocs_antenna_outreach.jpg)
 
 ## Meteorological Systems
 
 ### Foremast
 
-![](images/Fkt%20Met%20Sensor%20Locations%20(4)-2.jpg)
+![](images/shipdocs_met_foremast.jpg)
 
 ### Main Mast
 
-![](images/Fkt%20Met%20Sensor%20Locations%20(3).jpg)
+![](images/shipdocs_met_mainmast.jpg)
 
 ## Seawater System
 
