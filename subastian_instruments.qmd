@@ -72,9 +72,11 @@ Logged messages are standard NMEA GGA format
 
 Seabird FastCat49 CTD
 
-Conductivity is a measured value - this is the preferred source.
+Conductivity is a measured value - this is the preferred source
 
-Sound velocity is derived from temperature and conductivity - use uvSVX values if available.
+Sound velocity is derived from temperature and conductivity - use uvSVX values if available
+
+Internally OutputFormat=3(default, engineering units in decimal), ProcessRealTime=Y(cell thermal mass effect aligned, filtered, and corrected for), OutputSal=Y(realtime salinity output), OutputSV=Y(realtime sound-velocity output)  
 
 #### Outputs and Specifications
 
